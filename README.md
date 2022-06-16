@@ -2,7 +2,7 @@
 
 ### Hi, I'm Erick White - student, innovator, explorer.
 I'm an aerospace engineering major at the [University of Colorado Boulder](https://www.colorado.edu/), currently in my freshman year.
-I've been interested in computer science for a long time (I started coding in Scratch)
+I've been interested in computer science for a long time (I started coding in Scratch
 when I was in elementary school, and finally moved on to Python, Java, and other languages
 in high school); I hope to be able to pursue my interest through a possible minor in computer science.
 

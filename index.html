@@ -5,16 +5,52 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet">
-    <script src="assets/js/themeSwitcher.js"></script>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <script src="js/themeSwitcher.js"></script>
     <title>Erick White Personal Website</title>
 </head>
 <body>
     <main>
         <header>
-            <h1 class="name">Erick White</h1>
-            <h2 class="slogan">Student. Innovator. Explorer.</h2>
+            <div class="intro">
+                <h1 class="name">Erick White</h1>
+                <h2 class="slogan">Student. Innovator. Explorer.</h2>
+            </div>
         </header>
+        <section class="home">
+            <article class="container" grid-area="intro">
+                <h3 class="content-header">About Me</h3>
+                <p>I am a college freshman with a passion for programming, engineering, mathematics, physics, astronomy, and chemistry.
+                    I've wanted to be an astronaut since I was extremely young; I plan to study aerospace engineering at university, hopefully eventually landing me the job of my dreams.
+                    I enjoy volunteering with my local astronomical society at outreach events, as well as programming for a hobby.</p>
+            </article>
+            <picture id="profile-photo" class="container" grid-area="photo">
+                <img class="profile-photo" src="/assets/images/ErickWhite.jpg" alt="A picture of Erick White">
+                <figcaption>Hi, this is me!</figcaption>
+            </picture>
+            <article class="container" grid-area="info">
+                <h3 class="content-header">Site Info</h3>
+                <p>This website is designed to help you learn a little about me - my interests, hobbies, principles, experience, and more.</p>
+            </article>
+            <article class="container" grid-area="mission">
+                <h3 class="content-header">My Mission</h3>
+                <p>I aim to leave behind positive change with the work I do, no matter how small it may be.
+                    Whether it be programming, designing, building, or anything else, I want my efforts to impact the lives of both myself and others.
+                    I want to make a change with what I do, and in doing so, hopefully inspire others to make change as well.</p>
+            </article>
+            <article class="container" grid-area="leadership">
+                <h3 class="content-header">My Leadership</h3>
+                <p>I am a leader, able to take a task given to me and, through the effort of my team and I, present a solution.
+                    I seek to create an environment within my team in which each member contributes and all members benefit, something sorely lacking in too many teams.
+                    In utilizing my talent in both learned material and leadership, I work to make a team environment the best possible workspace.</p>
+            </article>
+        </section>
+        <footer>
+            <h3 class="footer-text"><a href="https://github.com/ErickWhiteDev" target="_blank">Made with ♥ by Erick White ©<span class="year"></span></a></h3>
+        </footer>
+        <script>
+            document.querySelector(".year").innerHTML = new Date().getFullYear(); // Get year for footer
+        </script>
     </main>
 </body>
 </html>

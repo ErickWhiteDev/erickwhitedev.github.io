@@ -1,0 +1,24 @@
+@import "/css/main.css";
+
+[data-theme="dark"] {
+    --java-primary: #f7901e;
+    --java-secondary: #007599;
+}
+
+[data-theme="light"] {
+    --java-primary: #f7901e;
+    --java-secondary: #007599;
+}
+
+.language-title strong {
+    font-family: var(--heading-font);
+    color: var(--java-primary);
+
+    transition-duration: .5s;
+}
+
+.language-title strong:hover {
+    color: var(--java-secondary);
+
+    transition-duration: .5s;
+}

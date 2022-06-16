@@ -1,0 +1,19 @@
+@import "/css/main.css";
+
+[data-theme="dark"] {
+    --cs-primary: #a078db;
+    --cs-secondary: #2c006b;
+}
+
+.language-title strong {
+    font-family: var(--heading-font);
+    color: var(--cs-primary);
+
+    transition-duration: .5s;
+}
+
+.language-title strong:hover {
+    color: var(--cs-secondary);
+
+    transition-duration: .5s;
+}

@@ -1,0 +1,224 @@
+[data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
+    --primary-background: #222;
+    --primary-light: #333;
+    --primary-dark: #111;
+    --primary-text: #ddd;
+
+    --heading-font: Tahoma, sans-serif;
+    --main-font: Tahoma, sans-serif;
+
+    --accent-background: #1d7fdb;
+    --accent-light: #67aeff;
+    --accent-dark: #0053a9;
+    --accent-text: #000;
+
+    --caption-text: #777;
+}
+
+[data-theme="light"] {
+    --primary-background: #eee;
+    --primary-light: #fff;
+    --primary-dark: #ddd;
+    --primary-text: #111;
+
+    --heading-font: Tahoma, sans-serif;
+    --main-font: Tahoma, sans-serif;
+
+    --accent-background: #04458f;
+    --accent-light: #4c70c0;
+    --accent-dark: #001f61;
+    --accent-text: #fff;
+
+    --caption-text: #666;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--primary-text);
+    background-image: linear-gradient(135deg, var(--accent-light), var(--accent-dark));
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    background-color: var(--primary-background);
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-dark);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-background);
+}
+
+.name {
+    color: var(--accent-background);
+    font-size: 5rem;
+    margin: 5rem 0.5rem auto;
+    transition-duration: .75s;
+}
+
+.name:hover {
+    color: var(--accent-light);
+    transform: scale(1.2);
+    transition-duration: .75s;
+}
+
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .name:hover {
+        transform: scale(1.0);
+    }
+}
+
+.slogan {
+    color: var(--accent-dark);
+    font-size: 2rem;
+    margin: 0.5rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .slogan {
+        font-size: 1.25rem;
+    }
+}
+
+section {
+    max-width: 100%;
+    width: 70%;
+    background-color: var(--primary-background);
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+    display: grid;
+    grid-column-gap: 0.25rem;
+    grid-row-gap: 0.25rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0.5rem auto;
+}
+
+figcaption {
+    font-size: .9rem;
+    font-style: italic;
+    color: var(--caption-text)
+}
+
+.home {
+    grid-template-areas:
+        "intro   photo       info"
+        "mission photo leadership";
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    .home {
+        grid-template-areas:
+        "intro        photo"
+        "info         photo"
+        "mission leadership";
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .home {
+        grid-template-areas:
+        "intro"
+        "photo"
+        "info"
+        "mission"
+        "leadership";
+
+        grid-template-columns: 1fr;
+    }
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00000000;
+    transition-duration: .25s;
+}
+
+.container:hover {
+    background-color: var(--primary-light);
+    border-color: var(--accent-background);
+    transition-duration: .25s;
+}
+
+.profile-photo {
+    width: 100%;
+}
+
+#profile-photo {
+    grid-row: span 2 / auto;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    text-align: center;
+    width: 100%;
+
+    padding: 15px;
+}
+
+.footer-text a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--primary-text);
+    transition-duration: .25s;
+}
+
+.footer-text a:hover {
+    color: var(--accent-light);
+    transition-duration: .25s;
+}
