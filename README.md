@@ -1,6 +1,6 @@
 # My Portfolio
 
-### Hi, I'm Erick White - student, programmer, explorer.
+### Hi, I'm Erick White - student, innovator, explorer.
 I'm an aerospace engineering major at the [University of Colorado Boulder](https://www.colorado.edu/), currently in my freshman year.
 I've been interested in computer science for a long time (I started coding in Scratch)
 when I was in elementary school, and finally moved on to Python, Java, and other languages
@@ -32,7 +32,7 @@ in high school); I hope to be able to pursue my interest through a possible mino
 ## What will you find in this portfolio?
 
 ### This portfolio is a compilation of a variety of different projects and assignments from over the years.
-### It invludes both finished and unfinished projects in many langiages; see my pages for [Java](https://erickwhitedev.github.io/portfolio/website/pages/java.html) and [Python](https://erickwhitedev.github.io/portfolio/website/pages/python.html) for a few examples of this.
+### It includes both finished and unfinished projects in many languages; see my pages for [Java](https://erickwhitedev.github.io/portfolio/website/pages/java.html) and [Python](https://erickwhitedev.github.io/portfolio/website/pages/python.html) for a few examples of this.
 
 <br>
 
