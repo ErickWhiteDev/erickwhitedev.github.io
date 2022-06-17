@@ -10,14 +10,14 @@ in high school); I hope to be able to pursue my interest through a possible mino
 <p align="center">
     <img alt="Languages in my Portfolio" src="https://img.shields.io/github/languages/count/ErickWhiteDev/portfolio?label=Languages%20in%20my%20Portfolio&style=flat-square">
     <img alt="Portfolio Commits per Year" src="https://img.shields.io/github/commit-activity/y/ErickWhiteDev/portfolio?label=Portfolio%20Commits&style=flat-square">
-    <img alt="Portfolio Website Status" src="https://img.shields.io/website?down_color=critical&down_message=Offline&label=Portfolio%20Website%20Status&style=flat-square&up_color=success&up_message=Online&url=https%3A%2F%2Ferickwhitedev.github.io%2Fportfolio%2F">
+    <img alt="Portfolio Website Status" src="https://img.shields.io/website?down_color=critical&down_message=Offline&label=Portfolio%20Website%20Status&style=flat-square&up_color=success&up_message=Online&url=https%3A%2F%2Ferickwhitedev.github.io">
     <img alt="Portfolio Repo Size" src="https://img.shields.io/github/languages/code-size/ErickWhiteDev/portfolio?label=Portfolio%20Repo%20Size&style=flat-square">
 </p>
 
-## This is a portfolio of my various projects, coding challenges, and assignments, across multiple years and programming languages.
+## This is a website with some information aboout me, my accomplishments, my skills, and more.
 
 ### More details on any project are available on request, along with additional projects.
-### Check out my [website](https://erickwhitedev.github.io/portfolio/) for more information!
+### Check out my [website](https://erickwhitedev.github.io) for more information!
 ### **NOTE:** This site was largely developed and tested using Chrome on Windows 10 machines, and thus may have some issues on other browsers (particularly mobile) - I'll get these fixed as soon as I can!
 
 <br>
@@ -29,22 +29,16 @@ in high school); I hope to be able to pursue my interest through a possible mino
 
 <br>
 
-## What will you find in this portfolio?
-
-### This portfolio is a compilation of a variety of different projects and assignments from over the years.
-### It includes both finished and unfinished projects in many languages; see my pages for [Java](https://erickwhitedev.github.io/portfolio/website/pages/java.html) and [Python](https://erickwhitedev.github.io/portfolio/website/pages/python.html) for a few examples of this.
-
 <br>
 
-## Where is this portfolio headed?
+## Where is this website headed?
 
 ### I am planning on consistently updating this repository; make sure to check back often! In the meanwhile, here's a short "to-do" list (in no particular order):
 
-- Adding dates to all my projects
-- Adding my C# (Unity) projects to my website
+- Adding more content pages
 - Improving my website's design
-- Finishing/adding more programming challenges
+- Making my website more responsive
 
 <br>
 
-### Thanks for checking out my portfolio!
+### Thanks for checking out my website!
