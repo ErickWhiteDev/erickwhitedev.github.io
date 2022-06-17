@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 0 60 60"
+   version="1.1"
+   id="theme"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <path
+       id="path846"
+       style="fill:currentColor"
+       d="M 113.38672 0 A 113.38583 113.38583 0 0 0 0 113.38672 A 113.38583 113.38583 0 0 0 113.38672 226.77148 A 113.38583 113.38583 0 0 0 226.77148 113.38672 A 113.38583 113.38583 0 0 0 113.38672 0 z M 113.38672 18.898438 A 94.487123 94.487955 0 0 1 207.87305 113.38672 A 94.487123 94.487955 0 0 1 113.38672 207.87305 L 113.38672 18.898438 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>
