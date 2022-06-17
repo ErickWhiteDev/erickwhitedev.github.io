@@ -1,4 +1,4 @@
-@import "/css/main.css";
+@import "/styles/main.css";
 
 [data-theme="dark"] {
     --cs-primary: #a078db;

@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector("main").style.filter = "blur(10px)";
             menuClosed = true;
         }
-    }
+    };
 
 });

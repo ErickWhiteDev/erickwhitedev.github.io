@@ -59,10 +59,16 @@ button {
 }
 
 svg {
-    width: 3rem;
+    width: 2.5rem;
     padding: 0;
     margin: -2.5rem 1.0rem;
     color: var(--primary-text);
+}
+
+@media only screen and (max-width: 1000px) {
+    svg {
+        width: 2rem;
+    }
 }
 
 #menu-button {
@@ -140,10 +146,10 @@ nav li {
 
 nav li:hover {
     background-color: var(--accent-background);
+    color: var(--accent-text);
 }
 
 nav a {
-    font-family: var(--main-font);
     text-decoration: none;
     color: var(--primary-text);
     display: block;
@@ -156,7 +162,7 @@ nav a {
 
 header {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -164,6 +170,31 @@ header {
     justify-content: center;
     text-align: center;
     background-color: var(--primary-dark);
+}
+
+.page-title {
+    color: var(--accent-background);
+    font-size: 5rem;
+    margin: 5rem 0.5rem auto;
+    transition-duration: .75s;
+}
+
+.page-title:hover {
+    color: var(--accent-light);
+    transform: scale(1.2);
+    transition-duration: .75s;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page-title:hover {
+        transform: scale(1.0);
+    }
 }
 
 ::-webkit-scrollbar {
@@ -182,41 +213,14 @@ header {
     background: var(--accent-background);
 }
 
-.name {
-    color: var(--accent-background);
-    font-size: 5rem;
-    margin: 5rem 0.5rem auto;
-    transition-duration: .75s;
+.stylized {
+    color: var(--accent-light)
 }
 
-.name:hover {
+.page-link {
+    text-decoration: none;
     color: var(--accent-light);
-    transform: scale(1.2);
-    transition-duration: .75s;
-}
-
-@media only screen and (max-width: 600px) {
-    .name {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .name:hover {
-        transform: scale(1.0);
-    }
-}
-
-.slogan {
-    color: var(--accent-dark);
-    font-size: 2rem;
-    margin: 0.5rem auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .slogan {
-        font-size: 1.25rem;
-    }
+    font-weight: bold;
 }
 
 section {
@@ -242,38 +246,6 @@ figcaption {
     color: var(--caption-text)
 }
 
-.home {
-    grid-template-areas:
-        "intro   photo       info"
-        "mission photo leadership";
-
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1200px){
-    .home {
-        grid-template-areas:
-        "intro        photo"
-        "info         photo"
-        "mission leadership";
-
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .home {
-        grid-template-areas:
-        "intro"
-        "photo"
-        "info"
-        "mission"
-        "leadership";
-
-        grid-template-columns: 1fr;
-    }
-}
-
 .container {
     max-width: 100%;
     display: flex;
@@ -294,20 +266,11 @@ figcaption {
     transition-duration: .25s;
 }
 
-.profile-photo {
-    width: 100%;
-}
-
-#profile-photo {
-    grid-row: span 2 / auto;
-}
-
 footer {
     background-color: var(--primary-dark);
     text-align: center;
     width: 100%;
-    max-width: 100%;
-    padding: 15px;
+    padding: 1rem 0;
 }
 
 .footer-text a {
@@ -320,4 +283,68 @@ footer {
 .footer-text a:hover {
     color: var(--accent-light);
     transition-duration: .25s;
+}
+
+form {
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding: 1rem;
+    border: none;
+}
+
+@media only screen and (max-width: 1000px){
+    #contact-form {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #contact-form {
+        width: 90%;
+    }
+}
+
+#contact-form * {
+    display: block;
+    width: 100%;
+    min-height: 1rem;
+    padding: 0.5rem 0;
+}
+
+#contact-form input, textarea {
+    color: var(--primary-text);
+    background-color: var(--primary-background);
+    margin: 0.5rem 0 0 0;
+    border: none;
+}
+
+#submit {
+    margin: auto;
+    height: 2em;
+    font-size: 1.25rem;
+    background-color: var(--primary-light);
+    color: var(--primary-text);
+    border: 0;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--accent-light);
+    color: var(--accent-text);
+}
+
+#confirmation {
+    display: none;
+    margin: 1rem;
+}
+
+.empty-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

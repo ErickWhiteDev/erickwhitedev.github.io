@@ -1,4 +1,4 @@
-@import "/css/main.css";
+@import "/styles/main.css";
 
 [data-theme="dark"] {
     --python-primary: #3777ab;

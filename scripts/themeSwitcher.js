@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", () => { // https://www.pullrequest
         changeTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
         document.documentElement.setAttribute("data-theme", changeTheme);
         localStorage.setItem("changeTheme", changeTheme);
-    }
+    };
 
 });

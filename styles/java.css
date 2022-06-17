@@ -1,4 +1,4 @@
-@import "/css/main.css";
+@import "/styles/main.css";
 
 [data-theme="dark"] {
     --java-primary: #f7901e;

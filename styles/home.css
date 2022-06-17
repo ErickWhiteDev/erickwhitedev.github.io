@@ -1,0 +1,53 @@
+@import "/styles/main.css";
+
+.slogan {
+    color: var(--accent-dark);
+    font-size: 2rem;
+    margin: 0.5rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .slogan {
+        font-size: 1.25rem;
+    }
+}
+
+.home {
+    grid-template-areas:
+        "intro   photo       info"
+        "mission photo leadership";
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    .home {
+        grid-template-areas:
+        "intro        photo"
+        "info         photo"
+        "mission leadership";
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .home {
+        grid-template-areas:
+        "intro"
+        "photo"
+        "info"
+        "mission"
+        "leadership";
+
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-photo {
+    width: 100%;
+}
+
+#profile-photo {
+    grid-row: span 2 / auto;
+}
