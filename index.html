@@ -29,66 +29,68 @@
             <li class="nav-item"><a href="about-me.html">About Me</a></li>
         </ul>
     </nav>
-    <main>
-        <header>
-            <div class="intro">
-                <h1 class="page-title" id="main-header">Erick White</h1>
-                <h2 class="page-subtitle">Student. Innovator. Explorer.</h2>
-            </div>
-        </header>
-        <section class="home">
-            <article class="container" grid-area="intro">
-                <h3 class="content-header">Hi! I'm <span class="stylized">Erick White</span>.</h3>
-                <p>
-                    I am a college freshman with a passion for programming, engineering, mathematics, physics, astronomy, and chemistry.
-                    I've wanted to be an astronaut since I was extremely young; I plan to study aerospace engineering at university, hopefully eventually landing me the job of my dreams.
-                    I enjoy volunteering with my local astronomical society at outreach events, as well as programming for a hobby.
-                </p>
-            </article>
-            <picture id="profile-photo" class="container" grid-area="photo">
-                <img class="profile-photo" src="/assets/images/ErickWhite.jpg" alt="A picture of Erick White">
-                <figcaption>Hi, this is me!</figcaption>
-            </picture>
-            <article class="container" grid-area="info">
-                <h3 class="content-header">Site Info</h3>
-                <p>
-                    This website is designed to help you learn a little about me - my interests, hobbies, principles, experience, and more.
-                    On each page, you'll find something a little different - some background about me, some of my projects, maybe even a blog if I get around to it!
-                    If you ever want to learn more, feel free to <a class="page-link" href="#contact-form">contact me!</a>
-                </p>
-            </article>
-            <article class="container" grid-area="mission">
-                <h3 class="content-header">My Mission</h3>
-                <p>I aim to leave behind positive change with the work I do, no matter how small it may be.
-                    Whether it be programming, designing, building, or anything else, I want my efforts to impact the lives of both myself and others.
-                    I want to make a change with what I do, and in doing so, hopefully inspire others to make change as well.</p>
-            </article>
-            <article class="container" grid-area="leadership">
-                <h3 class="content-header">My Leadership</h3>
-                <p>
-                    I am a leader, able to take a task given to me and, through the effort of my team and I, present a solution.
-                    I seek to create an environment within my team in which each member contributes and all members benefit, something sorely lacking in too many teams.
-                    In utilizing my talent in both learned material and leadership, I work to make a team environment the best possible workspace.
-                </p>
-            </article>
-        </section>
-        <footer>
-            <h3 class="footer-text"><a href="https://github.com/ErickWhiteDev" target="_blank">Made with ♥ by Erick White ©<span class="year"></span></a></h3>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLScXgfCx44FbTs9W1XjOAyrSTc1i2XPvYFwpeVHOAbqGAs3aeg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
-                <fieldset id="contact-form">
-                    <label>First Name: <input type="text" name="entry.365920305" required></label>
-                    <label>Last Name: <input type="text" name="entry.715211019" required></label>
-                    <label>E-Mail: <input type="email" name="entry.852091589" required></label>
-                    <label>Questions and Comments:
-                        <textarea name="entry.1339925219" rows="3" cols="30" placeholder="Your text goes here!"></textarea>
-                    </label>
-                    <input type="submit" value="Submit" id="submit">
-                </fieldset>
-            </form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-            <div id="confirmation">Thank you! Your response has been submitted!</div>
-        </footer>
-    </main>
+    <div class="main-background">
+        <main>
+            <header>
+                <div class="intro">
+                    <h1 class="page-title" id="main-header">Erick White</h1>
+                    <h2 class="page-subtitle">Student. Innovator. Explorer.</h2>
+                </div>
+            </header>
+            <section class="home">
+                <article class="container" grid-area="intro">
+                    <h3 class="content-header">Hi! I'm <span class="stylized">Erick White</span>.</h3>
+                    <p>
+                        I am a college freshman with a passion for programming, engineering, mathematics, physics, astronomy, and chemistry.
+                        I've wanted to be an astronaut since I was extremely young; I plan to study aerospace engineering at university, hopefully eventually landing me the job of my dreams.
+                        I enjoy volunteering with my local astronomical society at outreach events, as well as programming for a hobby.
+                    </p>
+                </article>
+                <picture id="profile-photo" class="container" grid-area="photo">
+                    <img class="profile-photo" src="/assets/images/ErickWhite.jpg" alt="A picture of Erick White">
+                    <figcaption>Hi, this is me!</figcaption>
+                </picture>
+                <article class="container" grid-area="info">
+                    <h3 class="content-header">Site Info</h3>
+                    <p>
+                        This website is designed to help you learn a little about me - my interests, hobbies, principles, experience, and more.
+                        On each page, you'll find something a little different - some background about me, some of my projects, maybe even a blog if I get around to it!
+                        If you ever want to learn more, feel free to <a class="page-link" href="#contact-form">contact me!</a>
+                    </p>
+                </article>
+                <article class="container" grid-area="mission">
+                    <h3 class="content-header">My Mission</h3>
+                    <p>I aim to leave behind positive change with the work I do, no matter how small it may be.
+                        Whether it be programming, designing, building, or anything else, I want my efforts to impact the lives of both myself and others.
+                        I want to make a change with what I do, and in doing so, hopefully inspire others to make change as well.</p>
+                </article>
+                <article class="container" grid-area="leadership">
+                    <h3 class="content-header">My Leadership</h3>
+                    <p>
+                        I am a leader, able to take a task given to me and, through the effort of my team and I, present a solution.
+                        I seek to create an environment within my team in which each member contributes and all members benefit, something sorely lacking in too many teams.
+                        In utilizing my talent in both learned material and leadership, I work to make a team environment the best possible workspace.
+                    </p>
+                </article>
+            </section>
+            <footer>
+                <h3 class="footer-text"><a href="https://github.com/ErickWhiteDev" target="_blank">Made with ♥ by Erick White ©<span class="year"></span></a></h3>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScXgfCx44FbTs9W1XjOAyrSTc1i2XPvYFwpeVHOAbqGAs3aeg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+                    <fieldset id="contact-form">
+                        <label>First Name: <input type="text" name="entry.365920305" required></label>
+                        <label>Last Name: <input type="text" name="entry.715211019" required></label>
+                        <label>E-Mail: <input type="email" name="entry.852091589" required></label>
+                        <label>Questions and Comments:
+                            <textarea name="entry.1339925219" rows="3" cols="30" placeholder="Your text goes here!"></textarea>
+                        </label>
+                        <input type="submit" value="Submit" id="submit">
+                    </fieldset>
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                <div id="confirmation">Thank you! Your response has been submitted!</div>
+            </footer>
+        </main>
+    </div>
 </body>
 <script src="scripts/blurHeader.js" type="text/javascript"></script>
 <script src="scripts/themeSwitcher.js" type="text/javascript"></script>
