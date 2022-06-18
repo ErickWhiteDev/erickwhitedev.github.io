@@ -39,7 +39,7 @@ html, body {
     font-family: var(--main-font);
     font-size: 16px;
     color: var(--primary-text);
-    background-color: var(--primary-background);
+    background-color: var(--primary-dark);
 }
 
 body {
@@ -183,6 +183,18 @@ header {
     color: var(--accent-light);
     transform: scale(1.2);
     transition-duration: .75s;
+}
+
+.page-subtitle {
+    color: var(--accent-dark);
+    font-size: 2rem;
+    margin: 0.5rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-subtitle {
+        font-size: 1.25rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -347,4 +359,8 @@ form {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.error-page {
+    height: calc(100vh - 5.75rem);
 }

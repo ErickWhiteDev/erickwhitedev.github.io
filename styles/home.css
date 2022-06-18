@@ -1,17 +1,5 @@
 @import "/styles/main.css";
 
-.slogan {
-    color: var(--accent-dark);
-    font-size: 2rem;
-    margin: 0.5rem auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .slogan {
-        font-size: 1.25rem;
-    }
-}
-
 .home {
     grid-template-areas:
         "intro   photo       info"
