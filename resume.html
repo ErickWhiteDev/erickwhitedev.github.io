@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Erick White - Résumé: Here you can download my official résumé!">
+  <link href="styles/main.css" type="text/css" rel="stylesheet">
+  <link href="assets/favicon.ico?" type="image/x-icon" rel="shortcut icon">
+  <title>Erick White - Résumé</title>
+</head>
+<body>
+<button name="menu-button" id="menu-button">
+  <svg>
+    <use href="assets/svg/menu.svg#menu"/>
+  </svg>
+</button>
+<button name="theme-switch" id="theme-switch">
+  <svg>
+    <use href="assets/svg/theme.svg#theme"/>
+  </svg>
+</button>
+<nav id="menu">
+  <div class="spacer"></div>
+  <ul>
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="about-me.html">About Me</a></li>
+    <li class="nav-item"><a href="resume.html">Résumé</a></li>
+  </ul>
+</nav>
+<div class="main-background">
+  <main>
+    <header>
+      <div class="intro">
+        <h1 class="page-title" id="main-header">About me</h1>
+      </div>
+    </header>
+    <section class="empty-page">
+      <h3 class="content-header"><span class="stylized">Uh oh! There's nothing here yet - come back soon!</span></h3>
+    </section>
+    <footer>
+      <h3 class="footer-text"><a href="https://github.com/ErickWhiteDev" target="_blank">Made with ♥ by Erick White ©<span class="year"></span></a></h3>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLScXgfCx44FbTs9W1XjOAyrSTc1i2XPvYFwpeVHOAbqGAs3aeg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+        <fieldset id="contact-form">
+          <label>First Name: <input type="text" name="entry.365920305" required></label>
+          <label>Last Name: <input type="text" name="entry.715211019" required></label>
+          <label>E-Mail: <input type="email" name="entry.852091589" required></label>
+          <label>Questions and Comments:
+            <textarea name="entry.1339925219" rows="3" cols="30" placeholder="Your text goes here!"></textarea>
+          </label>
+          <input type="submit" value="Submit" id="submit">
+        </fieldset>
+      </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      <div id="confirmation">Thank you! Your response has been submitted!</div>
+    </footer>
+  </main>
+</div>
+</body>
+<script src="scripts/blurHeader.js" type="text/javascript"></script>
+<script src="scripts/themeSwitcher.js" type="text/javascript"></script>
+<script src="scripts/menuHandler.js" type="text/javascript"></script>
+<script src="scripts/getYear.js" type="text/javascript"></script>
+<script src="scripts/formSubmitHandler.js" type="text/javascript"></script>
+</html>
