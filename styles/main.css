@@ -161,6 +161,11 @@ nav a {
     height: 7rem;
 }
 
+menu {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     height: 100vh;
     width: 100%;
