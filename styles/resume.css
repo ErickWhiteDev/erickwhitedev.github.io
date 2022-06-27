@@ -1,0 +1,16 @@
+@import "/styles/main.css";
+
+.resume {
+    grid-template-areas:
+        "intro"
+        "resume";
+
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 100vh;
+}
+
+#resume-file {
+    height: 100%;
+    border: none;
+}
