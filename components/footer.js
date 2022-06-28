@@ -1,4 +1,5 @@
 let footer = `
+    <meta charset="UTF-8">
     <h3 class="footer-text"><a href="https://github.com/ErickWhiteDev" target="_blank">Made with ♥ by Erick White ©<span class="year"></span></a></h3>
     <form action="https://docs.google.com/forms/d/e/1FAIpQLScXgfCx44FbTs9W1XjOAyrSTc1i2XPvYFwpeVHOAbqGAs3aeg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
         <fieldset id="contact-form">
@@ -14,4 +15,5 @@ let footer = `
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     <div id="confirmation">Thank you! Your response has been submitted!</div>
 `;
+
 document.getElementById("footer").innerHTML = footer;

@@ -371,7 +371,3 @@ form {
     justify-content: center;
     align-content: center;
 }
-
-.error-page {
-    height: calc(100vh - 5.75rem);
-}

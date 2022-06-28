@@ -18,4 +18,5 @@ let pageMenu = `
         </ul>
     </nav>
 `;
+
 document.getElementById("page-menu").innerHTML = pageMenu;
