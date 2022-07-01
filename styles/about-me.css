@@ -1,0 +1,54 @@
+.about-me {
+    grid-template-areas:
+        "history         hobbies                  hobbies"
+        "divider-1       divider-1              divider-1"
+        "projects        projects                projects"
+        "divider-2       divider-2              divider-2"
+        "organizations   organizations          fun-facts";
+
+}
+
+@media only screen and (max-width: 1200px){
+    .about-me {
+        grid-template-areas:
+        "history"
+        "hobbies"
+        "divider-1"
+        "projects"
+        "divider-2"
+        "organizations"
+        "fun-facts";
+    }
+}
+
+#history {
+    grid-area: history;
+}
+
+#hobbies {
+    grid-area: hobbies;
+}
+
+#divider-1 {
+    border-bottom: solid var(--accent-background) 0.5rem;
+    margin: 0.5rem;
+    grid-area: divider-1;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#divider-2 {
+    border-bottom: solid var(--accent-background) 0.5rem;
+    margin: 0.5rem;
+    grid-area: divider-2;
+}
+
+#organizations {
+    grid-area: organizations;
+}
+
+#fun-facts {
+    grid-area: fun-facts;
+}

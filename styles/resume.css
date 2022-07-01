@@ -1,13 +1,17 @@
-@import "/styles/main.css";
-
 .resume {
     grid-template-areas:
         "intro"
         "resume";
 
-
-    grid-template-columns: 1fr;
     grid-template-rows: auto 100vh;
+}
+
+#intro {
+    grid-area: intro;
+}
+
+#resume {
+    grid-area: resume;
 }
 
 #resume-file {

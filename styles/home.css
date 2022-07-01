@@ -1,11 +1,7 @@
-@import "/styles/main.css";
-
 .home {
     grid-template-areas:
         "intro   photo       info"
         "mission photo leadership";
-
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1200px){
@@ -14,8 +10,6 @@
         "intro        photo"
         "info         photo"
         "mission leadership";
-
-        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -27,15 +21,29 @@
         "info"
         "mission"
         "leadership";
-
-        grid-template-columns: 1fr;
     }
+}
+
+#intro {
+    grid-area: intro;
+}
+
+#photo {
+    grid-area: photo;
+}
+
+#info {
+    grid-area: info;
+}
+
+#mission {
+    grid-area: mission;
+}
+
+#leadership {
+    grid-area: leadership;
 }
 
 .profile-photo {
     width: 100%;
-}
-
-#profile-photo {
-    grid-row: span 2 / auto;
 }

@@ -235,7 +235,7 @@ header {
     color: var(--accent-light)
 }
 
-.page-link {
+.link {
     text-decoration: none;
     color: var(--accent-light);
     font-weight: bold;
@@ -287,6 +287,11 @@ figcaption {
     background-color: var(--primary-light);
     border-color: var(--accent-background);
     transition-duration: .25s;
+}
+
+.divider {
+    border-bottom: solid var(--accent-background) 0.5rem;
+    margin: 0.5rem;
 }
 
 footer {
