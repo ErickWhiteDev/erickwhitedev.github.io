@@ -1,6 +1,10 @@
 # My Portfolio
 
 ### Hi, I'm Erick White - student, innovator, explorer.
+### Check out my [website](https://erickwhitedev.github.io) for more information!
+
+<br>
+
 I'm an aerospace engineering major at the [University of Colorado Boulder](https://www.colorado.edu/), currently in my freshman year.
 I've been interested in computer science for a long time (I started coding in Scratch
 when I was in elementary school, and finally moved on to Python, Java, and other languages
@@ -17,8 +21,6 @@ in high school); I hope to be able to pursue my interest through a possible mino
 ## This is a website with some information aboout me, my accomplishments, my skills, and more.
 
 ### More details on any project are available on request, along with additional projects.
-### Check out my [website](https://erickwhitedev.github.io) for more information!
-### **NOTE:** This site was largely developed and tested using Chrome on Windows 10 machines, and thus may have some issues on other browsers (particularly mobile) - I'll get these fixed as soon as I can!
 
 <br>
 
@@ -29,15 +31,13 @@ in high school); I hope to be able to pursue my interest through a possible mino
 
 <br>
 
-<br>
-
 ## Where is this website headed?
 
 ### I am planning on consistently updating this repository; make sure to check back often! In the meanwhile, here's a short "to-do" list (in no particular order):
 
 - Adding more content pages
-- Improving my website's design
-- Making my website more responsive
+- Adding relevant images
+- Adding submenus and subpages for particular interests and projects
 
 <br>
 
