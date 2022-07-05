@@ -6,7 +6,7 @@
   <meta property="og:title" content="Erick White - Student, Innovator, Explorer">
   <meta property="og:type" content="article">
   <meta property="og:description" content="Erick White's personal portfolio website.">
-  <meta property="og:image" content="https://github.com/ErickWhiteDev/erickwhitedev.github.io/blob/main/assets/images/BoatsOnWater.jpeg">
+  <meta property="og:image" content="https://github.com/ErickWhiteDev/erickwhitedev.github.io/blob/main/assets/images/BoatsOnWater.jpeg?raw=true">
   <meta property="og:url" content="https://erickwhitedev.github.io">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#1d7fdb">
@@ -35,15 +35,19 @@
       </header>
       <div class="divider"></div>
       <section class="resume">
-        <article id="intro" class="container">
-          <p>
-            This is my official résumé, with a list of my skills and experiences included.
-            Feel free to give it a read and <a class="link" href="#contact-form">contact me</a> if you think I'd fit your position!
-          </p>
-        </article>
-        <article id="resume" class="container">
-          <iframe id="resume-file" src="assets/docs/resume.pdf"></iframe>
-        </article>
+        <div id="intro" class="grid-wrapper">
+          <article class="container">
+            <p>
+              This is my official résumé, with a list of my skills and experiences included.
+              Feel free to give it a read and <a class="link" href="#contact-form">contact me</a> if you think I'd fit your position!
+            </p>
+          </article>
+        </div>
+        <div id="resume" class="grid-wrapper">
+          <article id="resume-container" class="container">
+            <iframe id="resume-file" src="assets/docs/resume.pdf"></iframe>
+          </article>
+        </div>
       </section>
       <div class="divider"></div>
       <footer id="footer"></footer>
