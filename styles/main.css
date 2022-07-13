@@ -36,7 +36,7 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     color: var(--primary-text);
     background-color: var(--primary-dark);
@@ -259,9 +259,9 @@ img {
 }
 
 figcaption {
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-style: italic;
-    color: var(--caption-text)
+    color: var(--caption-text);
 }
 
 .full-width-photo {

@@ -1,3 +1,4 @@
+let submitted = false;
 let footer = `
     <meta charset="UTF-8">
     <h3 class="footer-text"><a href="https://github.com/ErickWhiteDev" target="_blank">Made with ♥ by Erick White ©<span class="year"></span></a></h3>
