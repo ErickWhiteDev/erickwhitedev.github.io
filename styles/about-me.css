@@ -8,7 +8,7 @@
 
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1600px) {
     .about-me {
         grid-template-areas:
         "history"
@@ -26,7 +26,16 @@
 }
 
 #hobbies {
+    padding-left: 0.25rem;
+    border-left: solid 0.5rem var(--accent-background);
     grid-area: hobbies;
+}
+
+@media only screen and (max-width: 1600px) {
+    #hobbies {
+        padding-left: 0;
+        border-left: 0;
+    }
 }
 
 #divider-1 {
@@ -40,7 +49,7 @@
 }
 
 #divider-2 {
-    border-bottom: solid var(--accent-background) 0.5rem;
+    border-bottom: solid 0.5rem var(--accent-background);
     margin: 0.5rem;
     grid-area: divider-2;
 }
@@ -50,5 +59,104 @@
 }
 
 #fun-facts {
+    padding-left: 0.25rem;
+    border-left: solid 0.5rem var(--accent-background);
     grid-area: fun-facts;
+}
+
+@media only screen and (max-width: 1600px) {
+    #fun-facts {
+        padding-left: 0;
+        border-left: 0;
+    }
+}
+
+#history-grid {
+    grid-template-areas:
+        "history-header             history-header"
+        "history-par-1         washington-monument"
+        "history-par-2         washington-monument"
+        "moon                        history-par-3";
+}
+
+@media only screen and (max-width: 1600px) {
+    #history-grid {
+        grid-template-areas:
+            "history-header"
+            "history-par-1"
+            "washington-monument"
+            "history-par-2"
+            "moon"
+            "history-par-3";
+    }
+}
+
+#history-header {
+    grid-area: history-header;
+}
+
+#history-par-1 {
+    grid-area: history-par-1;
+}
+
+#history-par-2 {
+    grid-area: history-par-2;
+}
+
+#history-par-3 {
+    grid-area: history-par-3;
+}
+
+#washington-monument {
+    grid-area: washington-monument;
+}
+
+#hobbies-grid {
+    grid-template-areas:
+        "hobbies-header     hobbies-header"
+        "pink-flower-cluster hobbies-par-1"
+        "pink-flower-cluster hobbies-par-2"
+        "hobbies-par-3              rachel"
+        "hobbies-par-3              saturn";
+}
+
+@media only screen and (max-width: 1600px) {
+    #hobbies-grid {
+        grid-template-areas:
+            "hobbies-header"
+            "pink-flower-cluster"
+            "hobbies-par-1"
+            "hobbies-par-2"
+            "rachel"
+            "hobbies-par-3"
+            "saturn";
+    }
+}
+
+#hobbies-header {
+    grid-area: hobbies-header;
+}
+
+#pink-flower-cluster {
+    grid-area: pink-flower-cluster;
+}
+
+#hobbies-par-1 {
+    grid-area: hobbies-par-1;
+}
+
+#hobbies-par-2 {
+    grid-area: hobbies-par-2;
+}
+
+#hobbies-par-3 {
+    grid-area: hobbies-par-3;
+}
+
+#rachel {
+    grid-area: rachel;
+}
+
+#saturn {
+    grid-area: saturn;
 }

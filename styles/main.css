@@ -34,10 +34,10 @@
 
 html, body {
     width: 100%;
-    margin: 0;
     overflow-x: hidden;
     font-family: var(--main-font);
     font-size: 16px;
+    margin: 0;
     color: var(--primary-text);
     background-color: var(--primary-dark);
 }
@@ -264,6 +264,10 @@ figcaption {
     color: var(--caption-text)
 }
 
+.full-width-photo {
+    width: 100%;
+}
+
 .main-background {
     width: 100vw;
     background-color: var(--primary-background);
@@ -281,22 +285,29 @@ figcaption {
 .container {
     max-width: 100%;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
     margin: 0;
     padding: 0.5rem;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.25rem;
+    border-radius: 0.125rem;
     border-color: #00000000;
     transition-duration: .25s;
 }
 
 .container:hover {
     background-color: var(--primary-light);
-    border-color: var(--accent-background);
+    border-color: var(--accent-light);
     transition-duration: .25s;
+}
+
+.inner-grid {
+    display: grid;
+    margin: 0;
+    padding: 0;
 }
 
 .divider {
@@ -355,25 +366,39 @@ form {
 }
 
 #contact-form input, textarea {
+    font-family: var(--main-font);
     color: var(--primary-text);
     background-color: var(--primary-background);
+    box-sizing: border-box;
     margin: 0.5rem 0 0 0;
-    border: none;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 0.125rem;
+    border-color: var(--accent-dark);
+}
+
+#contact-form textarea {
+    padding: 0.5rem;
 }
 
 #submit {
-    margin: auto;
+    line-height: 0;
     height: 2em;
     font-size: 1.25rem;
+    font-weight: bold;
     background-color: var(--primary-light);
     color: var(--primary-text);
-    border: 0;
+    margin: auto;
     cursor: pointer;
+    transition-duration: 0.25s;
 }
 
 #submit:hover {
     background-color: var(--accent-light);
     color: var(--accent-text);
+    border-color: var(--accent-light);
+    transition-duration: 0.25s;
 }
 
 #confirmation {
