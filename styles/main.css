@@ -49,7 +49,7 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     transition: 0.25s;
 }
@@ -191,18 +191,6 @@ header {
     transition-duration: .75s;
 }
 
-.page-subtitle {
-    color: var(--accent-dark);
-    font-size: 2rem;
-    margin: 0.5rem auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .page-subtitle {
-        font-size: 1.25rem;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     .page-title {
         font-size: 3rem;
@@ -212,6 +200,18 @@ header {
 @media only screen and (max-width: 400px) {
     .page-title:hover {
         transform: scale(1.0);
+    }
+}
+
+.page-subtitle {
+    color: var(--accent-dark);
+    font-size: 2rem;
+    margin: 0.5rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-subtitle {
+        font-size: 1.25rem;
     }
 }
 
@@ -229,85 +229,6 @@ header {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-background);
-}
-
-.stylized {
-    color: var(--accent-light)
-}
-
-.link {
-    text-decoration: none;
-    color: var(--accent-light);
-    font-weight: bold;
-}
-
-section {
-    max-width: 100%;
-    width: 70%;
-    background-color: var(--primary-background);
-    margin: 0 auto;
-    padding: 1rem 0.5rem;
-    display: grid;
-    grid-column-gap: 0.25rem;
-    grid-row-gap: 0.25rem;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    margin: 0.5rem auto;
-}
-
-figcaption {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: var(--caption-text);
-}
-
-.full-width-photo {
-    width: 100%;
-}
-
-.main-background {
-    width: 100vw;
-    background-color: var(--primary-background);
-}
-
-.grid-wrapper {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0.5rem;
-    border-style: solid;
-    border-width: 0.25rem;
-    border-radius: 0.125rem;
-    border-color: #00000000;
-    transition-duration: .25s;
-}
-
-.container:hover {
-    background-color: var(--primary-light);
-    border-color: var(--accent-light);
-    transition-duration: .25s;
-}
-
-.inner-grid {
-    display: grid;
-    margin: 0;
-    padding: 0;
 }
 
 .divider {
