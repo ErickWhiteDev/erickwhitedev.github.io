@@ -1,0 +1,101 @@
+.home-grid {
+    display: grid;
+    max-width: 70%;
+    margin: auto;
+    grid-template-areas:
+        "intro"
+        "info"
+        "mission"
+        "leadership";
+    grid-gap: 1rem;
+}
+
+@media (min-width: 769px) {
+    .home-grid {
+        grid-template-areas:
+        "intro           mission"
+        "info         leadership";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    .home-grid {
+        grid-template-areas:
+        "intro        photo"
+        "info         photo"
+        "mission leadership";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
+    }
+}
+
+@media (min-width: 1441px){
+    .home-grid {
+        grid-template-areas:
+        "intro   info       photo"
+        "mission leadership photo";
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5rem;
+    border: 0.25rem solid;
+    border-radius: 1rem;
+    text-align: center;
+    transition-duration: 0.25s;
+}
+
+@media (min-width: 1025px) {
+    .container:hover {
+        background-color: var(--primary-light);
+        transition-duration: 0.25s;
+    }
+}
+
+.light {
+    border-color: var(--accent-light);
+}
+
+.dark {
+    border-color: var(--accent-dark);
+}
+
+#intro {
+    grid-area: intro;
+}
+
+#info {
+    grid-area: info;
+}
+
+#mission {
+    grid-area: mission;
+}
+
+#leadership {
+    grid-area: leadership;
+}
+
+#photo {
+    display: none;
+    grid-area: photo;
+    margin: 0;
+    max-height: 100%;
+    background-image: url("/assets/images/erick-white.jpg");
+    background-size: cover;
+    background-position: center 0;
+}
+
+@media (min-width: 1025px) {
+    #photo {
+        display: flex;
+    }
+}
