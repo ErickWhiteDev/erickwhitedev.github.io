@@ -152,7 +152,13 @@ nav {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
+    nav {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1440px) {
     nav {
         width: 20%;
     }
