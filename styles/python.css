@@ -1,5 +1,3 @@
-@import "/styles/main.css";
-
 [data-theme="dark"] {
     --python-primary: #3777ab;
     --python-secondary: #ffd343;

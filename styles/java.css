@@ -1,5 +1,3 @@
-@import "/styles/main.css";
-
 [data-theme="dark"] {
     --java-primary: #f7901e;
     --java-secondary: #007599;

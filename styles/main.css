@@ -48,7 +48,7 @@ laptop-l: 1440px;
 
 html, body {
     width: 100%;
-
+    overflow-x: hidden;
     font-family: var(--main-font);
     font-size: 18px;
     margin: 0;
@@ -57,13 +57,18 @@ html, body {
 }
 
 body {
+    max-width: 100vw;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
+.main-background {
+    width: 100%;
+}
+
 main {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     transition: 0.25s;
 }
