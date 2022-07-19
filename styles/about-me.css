@@ -1,0 +1,175 @@
+.about-me-grid {
+    display: grid;
+    max-width: 70%;
+    margin: auto;
+    grid-template-areas:
+        "history"
+        "hobbies"
+        "projects"
+        "organizations"
+        "fun-facts";
+    grid-gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .about-me-grid {
+        max-width: 100%;
+        grid-template-areas:
+        "history img-1"
+        "hobbies img-1"
+        "projects img-1"
+        "img-2 organizations"
+        "img-2 fun-facts";
+        grid-gap: 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5rem;
+    border: 0.25rem solid;
+    border-radius: 1rem;
+    text-align: center;
+    transition-duration: 0.25s;
+}
+
+.light {
+    border-color: var(--accent-light);
+}
+
+@media (min-width: 1024px) {
+    .light {
+        border: 0;
+    }
+}
+
+.dark {
+    border-color: var(--accent-dark);
+}
+
+@media (min-width: 1024px) {
+    .dark {
+        border: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .right {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .left {
+        text-align: right;
+    }
+}
+
+button {
+    background-color: #00000000;
+    border: 0;
+}
+
+@media (min-width: 1024px) {
+    .expand-button {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.image {
+    display: none;
+    border: 0;
+    border-radius: 0;
+}
+
+@media (min-width: 1024px) {
+    .image {
+        display: block;
+    }
+}
+
+#history {
+    grid-area: history;
+}
+
+@media (min-width: 1024px) {
+    #history {
+        border: 0.25rem solid var(--accent-light);
+        border-radius: 0;
+        border-bottom: 0;
+    }
+}
+
+#hobbies {
+    grid-area: hobbies;
+}
+
+@media (min-width: 1024px) {
+    #hobbies {
+        border: 0.25rem solid var(--accent-light);
+        border-radius: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+}
+
+#projects {
+    grid-area: projects;
+}
+
+@media (min-width: 1024px) {
+    #projects {
+        border: 0.25rem solid var(--accent-light);
+        border-radius: 0;
+        border-top: 0;
+    }
+}
+
+#organizations {
+    grid-area: organizations;
+}
+
+@media (min-width: 1024px) {
+    #organizations {
+        border: 0.25rem solid var(--accent-dark);
+        border-radius: 0;
+        border-bottom: 0;
+    }
+}
+
+#fun-facts {
+    grid-area: fun-facts;
+}
+
+@media (min-width: 1024px) {
+    #fun-facts {
+        border: 0.25rem solid var(--accent-dark);
+        border-radius: 0;
+        border-top: 0;
+    }
+}
+
+#img-1 {
+    grid-area: img-1;
+    max-height: 100%;
+    background-image: url("/assets/images/gallery/misc/pink-flower-cluster.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img-2 {
+    grid-area: img-2;
+    max-height: 100%;
+    background-image: url("/assets/images/gallery/rmss/2022/rachel.jpg");
+    background-size: cover;
+    background-position: center;
+}

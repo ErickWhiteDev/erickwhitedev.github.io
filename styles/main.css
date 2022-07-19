@@ -54,6 +54,7 @@ html, body {
     margin: 0;
     color: var(--primary-text);
     background-color: var(--primary-dark);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -85,7 +86,7 @@ svg {
     color: var(--primary-text);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     svg {
         width: 2.5rem;
     }
@@ -103,9 +104,11 @@ svg {
     cursor: pointer;
 }
 
-#menu-button:hover {
-    transform: scale(1.35);
-    transition-duration: 0.50s;
+@media (min-width: 1024px) {
+    #menu-button:hover {
+        transform: scale(1.35);
+        transition-duration: 0.50s;
+    }
 }
 
 #theme-switch {
@@ -120,9 +123,11 @@ svg {
     cursor: pointer;
 }
 
-#theme-switch:hover {
-    transform: scale(1.35);
-    transition-duration: 0.50s;
+@media (min-width: 1024px) {
+    #theme-switch:hover {
+        transform: scale(1.35);
+        transition-duration: 0.50s;
+    }
 }
 
 nav {
@@ -135,19 +140,19 @@ nav {
     z-index: 2;
 }
 
-@media (min-width: 769px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 899px) {
     nav {
         width: 50%;
     }
 }
 
-@media (min-width: 901px) and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1023px) {
     nav {
         width: 40%;
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     nav {
         width: 20%;
     }
@@ -204,7 +209,7 @@ header {
     transition-duration: .75s;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .page-title {
         font-size: 5rem;
     }
@@ -214,7 +219,7 @@ header {
     color: var(--accent-light);
 }
 
-@media (min-width: 601px) {
+@media (min-width: 600px) {
     .page-title:hover {
         transform: scale(1.2);
         transition-duration: .75s;
@@ -227,7 +232,7 @@ header {
     margin: 0.5rem auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .page-subtitle {
         font-size: 2rem;
     }
@@ -301,13 +306,13 @@ form {
     border: none;
 }
 
-@media (min-width: 601px) and (max-width: 1024px){
+@media (min-width: 600px) and (max-width: 1023px){
     #contact-form {
         width: 50%;
     }
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     #contact-form {
         width: 30%;
     }

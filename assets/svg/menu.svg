@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Modified by Erick White -->
 
 <svg
    viewBox="0 0 86 60"
@@ -20,7 +21,7 @@
        y="0"
        ry="5" />
     <rect
-       style="fill:currentColor"
+       fill="currentColor"
        id="rect846-2-0"
        width="86"
        height="10"
@@ -28,7 +29,7 @@
        y="25"
        ry="5" />
     <rect
-       style="fill:currentColor"
+       fill="currentColor"
        id="rect846-2-00"
        width="86"
        height="10"
