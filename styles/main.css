@@ -1,3 +1,17 @@
+/*
+Screen sizes for media queries:
+mobile-s: 320px;
+mobile-m: 375px;
+mobile-l: 425px;
+tablet-s: 600px;
+tablet-m: 768px;
+tablet-l: 900px;
+laptop-s: 1024px;
+laptop-m: 1200px;
+laptop-l: 1440px;
+4k: 2560px;
+ */
+
 [data-theme="dark"] { /* https://www.pullrequest.com/blog/how-to-implement-dark-mode-with-css-js/ */
     --primary-background: #222;
     --primary-light: #333;
@@ -40,12 +54,18 @@ html, body {
     margin: 0;
     color: var(--primary-text);
     background-color: var(--primary-dark);
+    scroll-behavior: smooth;
 }
 
 body {
+    max-width: 100vw;
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.main-background {
+    width: 100%;
 }
 
 main {
@@ -60,15 +80,15 @@ button {
 }
 
 svg {
-    width: 2.5rem;
+    width: 2rem;
     padding: 0;
     margin: -2.5rem 1.0rem;
     color: var(--primary-text);
 }
 
-@media only screen and (max-width: 1000px) {
+@media (min-width: 1024px) {
     svg {
-        width: 2rem;
+        width: 2.5rem;
     }
 }
 
@@ -80,13 +100,15 @@ svg {
     top: 0;
     left: 0;
     transition-duration: 0.50s;
-    z-index: 999;
+    z-index: 3;
     cursor: pointer;
 }
 
-#menu-button:hover {
-    transform: scale(1.35);
-    transition-duration: 0.50s;
+@media (min-width: 1024px) {
+    #menu-button:hover {
+        transform: scale(1.35);
+        transition-duration: 0.50s;
+    }
 }
 
 #theme-switch {
@@ -97,40 +119,42 @@ svg {
     top: 0;
     right: 0;
     transition-duration: 0.50s;
-    z-index: 999;
+    z-index: 3;
     cursor: pointer;
 }
 
-#theme-switch:hover {
-    transform: scale(1.35);
-    transition-duration: 0.50s;
+@media (min-width: 1024px) {
+    #theme-switch:hover {
+        transform: scale(1.35);
+        transition-duration: 0.50s;
+    }
 }
 
 nav {
     background-color: var(--primary-light);
-    width: 20%;
+    width: 100%;
     height: 100vh;
     position: fixed;
     left: 0;
     display: none;
-    z-index: 998;
+    z-index: 2;
 }
 
-@media only screen and (max-width: 1200px) {
-    nav {
-        width: 40%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 899px) {
     nav {
         width: 50%;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 900px) and (max-width: 1023px) {
     nav {
-        width: 100%;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        width: 20%;
     }
 }
 
@@ -180,38 +204,37 @@ header {
 
 .page-title {
     color: var(--accent-background);
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 5rem 0.5rem auto;
     transition-duration: .75s;
 }
 
+@media (min-width: 768px) {
+    .page-title {
+        font-size: 5rem;
+    }
+}
+
 .page-title:hover {
     color: var(--accent-light);
-    transform: scale(1.2);
-    transition-duration: .75s;
+}
+
+@media (min-width: 600px) {
+    .page-title:hover {
+        transform: scale(1.2);
+        transition-duration: .75s;
+    }
 }
 
 .page-subtitle {
     color: var(--accent-dark);
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin: 0.5rem auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 768px) {
     .page-subtitle {
-        font-size: 1.25rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .page-title {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .page-title:hover {
-        transform: scale(1.0);
+        font-size: 2rem;
     }
 }
 
@@ -231,8 +254,13 @@ header {
     background: var(--accent-background);
 }
 
+.divider {
+    border-bottom: solid var(--accent-background) 0.5rem;
+    margin: 0.5rem;
+}
+
 .stylized {
-    color: var(--accent-light)
+    color: var(--accent-light);
 }
 
 .link {
@@ -241,78 +269,10 @@ header {
     font-weight: bold;
 }
 
-section {
-    max-width: 100%;
-    width: 70%;
-    background-color: var(--primary-background);
-    margin: 0 auto;
-    padding: 1rem 0.5rem;
-    display: grid;
-    grid-column-gap: 0.25rem;
-    grid-row-gap: 0.25rem;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    margin: 0.5rem auto;
-}
-
 figcaption {
     font-size: 0.9rem;
     font-style: italic;
     color: var(--caption-text);
-}
-
-.full-width-photo {
-    width: 100%;
-}
-
-.main-background {
-    width: 100vw;
-    background-color: var(--primary-background);
-}
-
-.grid-wrapper {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0.5rem;
-    border-style: solid;
-    border-width: 0.25rem;
-    border-radius: 0.125rem;
-    border-color: #00000000;
-    transition-duration: .25s;
-}
-
-.container:hover {
-    background-color: var(--primary-light);
-    border-color: var(--accent-light);
-    transition-duration: .25s;
-}
-
-.inner-grid {
-    display: grid;
-    margin: 0;
-    padding: 0;
-}
-
-.divider {
-    border-bottom: solid var(--accent-background) 0.5rem;
-    margin: 0.5rem;
 }
 
 footer {
@@ -340,21 +300,21 @@ form {
 
 #contact-form {
     display: block;
-    width: 30%;
+    max-width: 100%;
     margin: auto;
     padding: 1rem;
     border: none;
 }
 
-@media only screen and (max-width: 1000px){
+@media (min-width: 600px) and (max-width: 1023px){
     #contact-form {
         width: 50%;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media (min-width: 1024px){
     #contact-form {
-        width: 90%;
+        width: 30%;
     }
 }
 
@@ -372,14 +332,13 @@ form {
     box-sizing: border-box;
     margin: 0.5rem 0 0 0;
     padding: 0.5rem;
-    border-style: solid;
-    border-width: 0.25rem;
-    border-radius: 0.125rem;
-    border-color: var(--accent-dark);
+    border: 0.25rem solid var(--accent-dark);
+    border-radius: 0.5rem;
 }
 
 #contact-form textarea {
     padding: 0.5rem;
+    resize: none;
 }
 
 #submit {

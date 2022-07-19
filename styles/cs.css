@@ -1,5 +1,3 @@
-@import "/styles/main.css";
-
 [data-theme="dark"] {
     --cs-primary: #a078db;
     --cs-secondary: #2c006b;
