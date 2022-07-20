@@ -53,7 +53,7 @@ html, body {
     font-size: 18px;
     margin: 0;
     color: var(--primary-text);
-    background-color: var(--primary-dark);
+    background-color: var(--primary-background);
     scroll-behavior: smooth;
 }
 
@@ -285,7 +285,6 @@ footer {
     background-color: var(--primary-dark);
     text-align: center;
     width: 100%;
-    padding: 1rem 0;
 }
 
 .footer-text a {
@@ -302,6 +301,15 @@ footer {
 
 form {
     margin: 0 auto;
+}
+
+.page-end {
+    background-color: var(--primary-light);
+    padding-top: 0.5rem;
+}
+
+.survey {
+    background-color: var(--primary-background);
 }
 
 #contact-form {

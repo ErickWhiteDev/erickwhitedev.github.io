@@ -2,6 +2,7 @@
     display: grid;
     max-width: 90%;
     margin: auto;
+    padding: 1rem;
     grid-template-areas:
         "intro"
         "resume";
