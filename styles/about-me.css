@@ -2,6 +2,7 @@
     display: grid;
     max-width: 70%;
     margin: auto;
+    padding: 1rem;
     grid-template-areas:
         "history"
         "hobbies"
@@ -14,6 +15,7 @@
 @media (min-width: 1024px) {
     .about-me-grid {
         max-width: 100%;
+        padding: 0;
         grid-template-areas:
         "history img-1"
         "hobbies img-1"
