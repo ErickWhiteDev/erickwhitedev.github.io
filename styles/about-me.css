@@ -162,5 +162,5 @@ button {
     max-height: 100%;
     background-image: url("/assets/images/gallery/rmss/2017/saturn.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
