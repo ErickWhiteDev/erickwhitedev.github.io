@@ -18,10 +18,10 @@
         padding: 0;
         grid-template-areas:
         "history img-1"
-        "hobbies img-1"
-        "projects img-1"
-        "img-2 organizations"
-        "img-2 fun-facts";
+        "img-2 hobbies"
+        "projects img-3"
+        "img-4 organizations"
+        "fun-facts img-5";
         grid-gap: 0;
     }
 }
@@ -46,7 +46,7 @@
 
 @media (min-width: 1024px) {
     .light {
-        border: 0;
+        border-radius: 0;
     }
 }
 
@@ -56,7 +56,7 @@
 
 @media (min-width: 1024px) {
     .dark {
-        border: 0;
+        border-radius: 0;
     }
 }
 
@@ -87,6 +87,12 @@ button {
     display: none;
 }
 
+@media (min-width: 1024px) {
+    .hidden {
+        display: block;
+    }
+}
+
 .image {
     display: none;
     border: 0;
@@ -103,61 +109,20 @@ button {
     grid-area: history;
 }
 
-@media (min-width: 1024px) {
-    #history {
-        border: 0.25rem solid var(--accent-light);
-        border-radius: 0;
-        border-bottom: 0;
-    }
-}
-
 #hobbies {
     grid-area: hobbies;
-}
-
-@media (min-width: 1024px) {
-    #hobbies {
-        border: 0.25rem solid var(--accent-light);
-        border-radius: 0;
-        border-top: 0;
-        border-bottom: 0;
-    }
 }
 
 #projects {
     grid-area: projects;
 }
 
-@media (min-width: 1024px) {
-    #projects {
-        border: 0.25rem solid var(--accent-light);
-        border-radius: 0;
-        border-top: 0;
-    }
-}
-
 #organizations {
     grid-area: organizations;
 }
 
-@media (min-width: 1024px) {
-    #organizations {
-        border: 0.25rem solid var(--accent-dark);
-        border-radius: 0;
-        border-bottom: 0;
-    }
-}
-
 #fun-facts {
     grid-area: fun-facts;
-}
-
-@media (min-width: 1024px) {
-    #fun-facts {
-        border: 0.25rem solid var(--accent-dark);
-        border-radius: 0;
-        border-top: 0;
-    }
 }
 
 #img-1 {
@@ -171,7 +136,31 @@ button {
 #img-2 {
     grid-area: img-2;
     max-height: 100%;
+    background-image: url("/assets/images/gallery/misc/moon.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img-3 {
+    grid-area: img-3;
+    max-height: 100%;
+    background-image: url("/assets/images/gallery/washington-dc-trip/washington-monument-sunset.JPG");
+    background-size: cover;
+    background-position: top;
+}
+
+#img-4 {
+    grid-area: img-4;
+    max-height: 100%;
     background-image: url("/assets/images/gallery/rmss/2022/rachel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img-5 {
+    grid-area: img-5;
+    max-height: 100%;
+    background-image: url("/assets/images/gallery/rmss/2017/saturn.jpg");
     background-size: cover;
     background-position: center;
 }
