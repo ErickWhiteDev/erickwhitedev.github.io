@@ -188,7 +188,7 @@ nav a {
 }
 
 .spacer {
-    height: 7rem;
+    height: 3rem;
 }
 
 menu {
@@ -273,6 +273,11 @@ header {
     text-decoration: none;
     color: var(--accent-light);
     font-weight: bold;
+}
+
+svg {
+    margin: 0.25rem;
+    height: 2rem;
 }
 
 figcaption {
