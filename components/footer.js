@@ -3,9 +3,14 @@ let footer = `
     <meta charset="UTF-8">
     <div class="page-end">
         <h4 class="footer-text">Made with ♥ by Erick White ©<span class="year"></span></h4>
-        <a href="https://github.com/ErickWhiteDev" target="_blank">
+        <a class="social-link" href="https://github.com/ErickWhiteDev" target="_blank">
             <svg>
                 <use href="assets/svg/github-logo.svg#github-logo"/>
+            </svg>
+        </a>
+        <a class="social-link" href="mailto:erickwhitebusiness@gmail.com" target="_blank">
+            <svg>
+                <use href="assets/svg/email-logo.svg#email-logo"/>
             </svg>
         </a>
     </div>

@@ -299,13 +299,27 @@ footer {
     transition-duration: .25s;
 }
 
-form {
-    margin: 0 auto;
-}
-
 .page-end {
     background-color: var(--primary-light);
     padding-top: 0.5rem;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-link svg {
+    fill: var(--primary-text);
+    transition-duration: 0.25s;
+}
+
+.social-link svg:hover {
+    fill: var(--accent-background);
+    transition-duration: 0.25s;
+}
+
+form {
+    margin: 0 auto;
 }
 
 .survey {
