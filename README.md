@@ -18,7 +18,7 @@ in high school); I hope to be able to pursue my interest through a possible mino
     <img alt="Portfolio Repo Size" src="https://img.shields.io/github/languages/code-size/ErickWhiteDev/portfolio?label=Portfolio%20Repo%20Size&style=flat-square">
 </p>
 
-## This is a website with some information aboout me, my accomplishments, my skills, and more.
+## This is a website with some information about me, my accomplishments, my skills, and more.
 
 ### More details on any project are available on request, along with additional projects.
 
