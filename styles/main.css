@@ -236,6 +236,18 @@ header {
     }
 }
 
+.error-title {
+    color: var(--accent-background);
+    font-size: 3rem;
+    margin: 5rem 0.5rem auto;
+}
+
+@media (min-width: 768px) {
+    .error-title {
+        font-size: 5rem;
+    }
+}
+
 .page-subtitle {
     color: var(--accent-dark);
     font-size: 1.25rem;
