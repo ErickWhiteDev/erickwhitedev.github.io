@@ -91,6 +91,10 @@ button {
     .hidden {
         display: block;
     }
+
+    .hidden li {
+        display: list-item;
+    }
 }
 
 .image {

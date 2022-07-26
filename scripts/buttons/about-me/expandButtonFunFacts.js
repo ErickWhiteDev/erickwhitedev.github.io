@@ -1,7 +1,9 @@
 let expandButtonFunFacts = document.getElementById("expand-fun-facts");
-let funFactsHidden = document.getElementById("fun-facts-hidden");
+let funFactsHidden = document.getElementsByClassName("fun-facts-hidden");
 
 expandButtonFunFacts.onclick = () => {
-    funFactsHidden.style.display = "block";
+    for (let i of funFactsHidden) {
+        i.style.display = "list-item";
+    }
     expandButtonFunFacts.style.display = "none";
 };
