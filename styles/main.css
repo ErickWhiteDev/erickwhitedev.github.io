@@ -176,7 +176,6 @@ nav ul {
 
 nav li {
     font-size: 2rem;
-    padding-left: .5rem;
 }
 
 nav li:hover {
@@ -187,8 +186,24 @@ nav li:hover {
 nav a {
     text-decoration: none;
     color: var(--primary-text);
-    display: block;
     padding: 0.75rem;
+    display: block;
+}
+
+.dropdown + ul {
+    display: none;
+}
+
+.dropdown:hover + ul {
+    display: block;
+}
+
+.nav-dropdown:hover {
+    display: block;
+}
+
+.nav-item-dropdown {
+    padding-left: 1rem;
 }
 
 .spacer {

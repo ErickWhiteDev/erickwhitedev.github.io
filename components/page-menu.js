@@ -19,4 +19,16 @@ let pageMenu = `
         </nav>
 `;
 
+// TODO: Fill out these pages and add this between About Me and Résumé
+/*
+                <li class="nav-item"><a href="philosophy-of-education.html">Philosophy of Education</a></li>
+                <li class="nav-item dropdown"><a>What I Do ▼</a></li>
+                <ul class="nav-dropdown">
+                    <li class="nav-item-dropdown"><a href="projects.html">Projects</a></li>
+                    <li class="nav-item-dropdown"><a href="creative-work.html">Creative Work</a></li>
+                    <li class="nav-item-dropdown"><a href="writing.html">Writing</a></li>
+                    <li class="nav-item-dropdown"><a href="work-and-experience.html">Work and Experience</a></li>
+                </ul>
+ */
+
 document.getElementById("page-menu").innerHTML = pageMenu;
