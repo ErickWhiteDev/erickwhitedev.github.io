@@ -5,10 +5,10 @@
     padding: 1rem;
     grid-template-areas:
         "history"
-        "hobbies"
-        "projects"
         "organizations"
-        "fun-facts";
+        "projects"
+        "fun-facts"
+        "hobbies";
     grid-gap: 1rem;
 }
 
@@ -18,10 +18,10 @@
         padding: 0;
         grid-template-areas:
         "history img-1"
-        "img-2 hobbies"
+        "img-2 organizations"
         "projects img-3"
-        "img-4 organizations"
-        "fun-facts img-5";
+        "img-4 fun-facts"
+        "hobbies img-5";
         grid-gap: 0;
     }
 }
@@ -38,6 +38,12 @@
     border-radius: 1rem;
     text-align: center;
     transition-duration: 0.25s;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 2rem 5rem;
+    }
 }
 
 .light {
@@ -92,7 +98,7 @@ button {
         display: block;
     }
 
-    .hidden li {
+    li.hidden {
         display: list-item;
     }
 }
@@ -113,20 +119,20 @@ button {
     grid-area: history;
 }
 
-#hobbies {
-    grid-area: hobbies;
+#organizations {
+    grid-area: organizations;
 }
 
 #projects {
     grid-area: projects;
 }
 
-#organizations {
-    grid-area: organizations;
-}
-
 #fun-facts {
     grid-area: fun-facts;
+}
+
+#hobbies {
+    grid-area: hobbies;
 }
 
 #img-1 {
@@ -156,15 +162,15 @@ button {
 #img-4 {
     grid-area: img-4;
     max-height: 100%;
-    background-image: url("/assets/images/gallery/rmss/2022/rachel.jpg");
+    background-image: url("/assets/images/gallery/rmss/2017/saturn.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 #img-5 {
     grid-area: img-5;
     max-height: 100%;
-    background-image: url("/assets/images/gallery/rmss/2017/saturn.JPG");
+    background-image: url("/assets/images/gallery/rmss/2022/rachel.JPG");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
