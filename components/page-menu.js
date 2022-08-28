@@ -14,6 +14,13 @@ let pageMenu = `
             <ul>
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="about-me.html">About Me</a></li>
+                <li class="nav-item"><a href="resume.html">Résumé</a></li>
+            </ul>
+        </nav>
+`;
+
+// TODO: Fill out these pages and add this between About Me and Résumé
+/*
                 <li class="nav-item"><a href="philosophy-of-education.html">Philosophy of Education</a></li>
                 <li class="nav-item dropdown"><a>What I Do ▼</a></li>
                 <ul class="nav-dropdown">
@@ -22,9 +29,6 @@ let pageMenu = `
                     <li class="nav-item-dropdown"><a href="writing.html">Writing</a></li>
                     <li class="nav-item-dropdown"><a href="work-and-experience.html">Work and Experience</a></li>
                 </ul>
-                <li class="nav-item"><a href="resume.html">Résumé</a></li>
-            </ul>
-        </nav>
-`;
+ */
 
 document.getElementById("page-menu").innerHTML = pageMenu;
