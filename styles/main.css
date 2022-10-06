@@ -190,6 +190,14 @@ nav a {
     display: block;
 }
 
+nav .resume {
+    background-color: var(--accent-light);
+}
+
+nav .resume:hover {
+    background-color: var(--accent-background);
+}
+
 .dropdown + ul {
     display: none;
 }

@@ -14,7 +14,7 @@ let pageMenu = `
             <ul>
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="about-me.html">About Me</a></li>
-                <li class="nav-item"><a href="resume.html">Résumé</a></li>
+                <li class="nav-item resume"><a href="resume.html">Résumé</a></li>
             </ul>
         </nav>
 `;
