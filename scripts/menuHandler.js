@@ -37,9 +37,30 @@ function setup() {
     closeMenu();
 }
 
-window.onload = window.onresize = () => {
+function endResize(func){ // https://stackoverflow.com/questions/45905160/javascript-on-window-resize-end
+    let timer;
+    return function(event){
+        if (timer) {
+            clearTimeout(timer);
+        }
+        timer = setTimeout(func,500,event);
+    };
+}
+
+window.onload = () => {
     setup();
 }
+
+window.onresize = () => {
+    menu.classList.add("hidden");
+}
+
+window.addEventListener("resize", endResize(
+    () => {
+        menu.classList.remove("hidden");
+        }
+    )
+);
 
 menuButton.onclick = () => {
     if (menuOpened) {
