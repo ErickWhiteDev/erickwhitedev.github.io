@@ -138,6 +138,11 @@ nav {
     left: calc(0px - 100%);
     z-index: 2;
     transition-duration: 0.5s;
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
