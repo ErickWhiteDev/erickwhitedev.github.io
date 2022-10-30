@@ -52,6 +52,7 @@ window.onload = () => {
 }
 
 window.onresize = () => {
+    setup();
     menu.style.display = "none";
 }
 
