@@ -14,6 +14,7 @@ let pageMenu = `
             <ul>
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="about-me.html">About Me</a></li>
+                <li class="nav-item"><a href="philosophy-of-education.html">Philosophy of Education</a></li>
                 <li class="nav-item resume"><a href="resume.html">Résumé</a></li>
             </ul>
         </nav>
@@ -21,7 +22,6 @@ let pageMenu = `
 
 // TODO: Fill out these pages and add this between About Me and Résumé
 /*
-                <li class="nav-item"><a href="philosophy-of-education.html">Philosophy of Education</a></li>
                 <li class="nav-item dropdown"><a>What I Do ▼</a></li>
                 <ul class="nav-dropdown">
                     <li class="nav-item-dropdown"><a href="projects.html">Projects</a></li>
