@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
@@ -19,14 +20,19 @@
     <script defer src="scripts/menuHandler.js" type="text/javascript"></script>
     <script defer src="scripts/getYear.js" type="text/javascript"></script>
     <script defer src="scripts/formSubmitHandler.js" type="text/javascript"></script>
+    <script defer src="scripts/buttons/projects/expandButtonSolidLiquidHybrid.js" type="text/javascript"></script>
     <link href="assets/favicon.ico?" type="image/x-icon" rel="shortcut icon">
     <link href="styles/main.css" type="text/css" rel="stylesheet">
+    <link href="styles/projects.css" type="text/css" rel="stylesheet">
     <title>Erick White - Projects</title>
     <meta name="description"
           content="Erick White - Projects: Some of the larger projects I've worked on over the years.">
 </head>
+
 <body>
+
 <menu id="page-menu"></menu>
+
 <div class="main-background">
     <main>
         <header>
@@ -34,11 +40,59 @@
                 <h1 class="page-title">Projects</h1>
             </div>
         </header>
+
         <div class="projects-grid">
-            <!-- CONTENT GOES HERE -->
+            <article class="container dark left" id="solid-liquid-hybrid">
+                <h3>Solid-Liquid Hybrid Rocket Engine</h3>
+                <p>
+                    As part of my <a class="link" href="relevant-courses.html#asen-1403">Introduction to Rocket Engineering</a> class, my team modeled, made design choices for, and fired off a solid-liquid hybrid rocket engine.
+                    This project involved learning the basics of the physics behind how rocket engines work, an introduction to evaluating differential equations in Excel using Euler's method, and an introduction to engineering design and making choices within constraints.
+                </p>
+                <button id="expand-solid-liquid-hybrid" aria-label="Expand Solid-Liquid Hybrid">
+                    <svg class="expand-button">
+                        <use href="assets/svg/expand.svg#expand"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="solid-liquid-hybrid-hidden">
+                    <p>
+                        This was the major final project for the course, taking several months to develop the model, make design choices, and pass various checkpoints along the way.
+                        One of the major checkpoints was the cold-flow test, in which the team did a test of the oxidizer tank flow rate to further increase the accuracy of our models.
+                        The other major checkpoint was the hot-fire test, in which the engine was fired with everything in place (fuel core, oxidizer, full assembly). This was the culmination of the hands-on portion of the project.
+                    </p>
+                    <p>
+                        Using the data from the tests to reflect on the accuracy of the model, the team was able to compare theoretical vs. real-world conditions and draw conclusions from the results, as well as learn how to improve future models.
+                    </p>
+                    <p>
+                        Thank you to all my team members: Ben Taylor, Quinn Levinson, Jordan Gentner, Cole Writer, Brice Parrott, Briar Holmes, and Owen Schuler.
+                    </p>
+                </div>
+            </article>
+
+            <div class="container light projects-content" id="solid-liquid-hybrid-content">
+                <iframe class="video"
+                        src="https://www.youtube.com/embed/Oi4eNyn6Y0A">
+                </iframe>
+            </div>
+
+            <div class="container light projects-content" id="estes-rocket-content">
+                <iframe class="video"
+                    src="https://www.youtube.com/embed/gknsVV6AjK8">
+                </iframe>
+            </div>
+
+            <article class="container dark right" id="estes-rocket">
+                <h3>Estes Rocket With Data Acquisition System</h3>
+                <p>
+                    Another project for my <a class="link" href="relevant-courses.html#asen-1403">Introduction to Rocket Engineering</a> class, this was a largely-solo project that involved learning the basics of data acquisition and processing.
+                    Using an Arduino Nano and a hand-soldered circuit board, I was able to predict the trajectory of a model rocket and then compare this to real data from the flight gathered using my DAQ.
+                </p>
+            </article>
         </div>
+
         <footer id="footer"></footer>
     </main>
 </div>
+
 </body>
+
 </html>

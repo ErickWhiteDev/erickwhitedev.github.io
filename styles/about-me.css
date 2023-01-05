@@ -14,11 +14,11 @@
         max-width: 100%;
         padding: 0;
         grid-template-areas:
-        "history img-1"
-        "img-2 organizations"
-        "projects img-3"
-        "img-4 fun-facts"
-        "hobbies img-5";
+            "history img-1"
+            "img-2 organizations"
+            "projects img-3"
+            "img-4 fun-facts"
+            "hobbies img-5";
         grid-gap: 0;
     }
 }
