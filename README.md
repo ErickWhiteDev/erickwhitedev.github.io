@@ -12,10 +12,7 @@ in high school); I hope to be able to pursue my interest through a possible mino
 
 
 <p align="center">
-    <img alt="Languages in my Portfolio" src="https://img.shields.io/github/languages/count/ErickWhiteDev/portfolio?label=Languages%20in%20my%20Portfolio&style=flat-square">
-    <img alt="Portfolio Commits per Year" src="https://img.shields.io/github/commit-activity/y/ErickWhiteDev/portfolio?label=Portfolio%20Commits&style=flat-square">
     <img alt="Portfolio Website Status" src="https://img.shields.io/website?down_color=critical&down_message=Offline&label=Portfolio%20Website%20Status&style=flat-square&up_color=success&up_message=Online&url=https%3A%2F%2Ferickwhitedev.github.io">
-    <img alt="Portfolio Repo Size" src="https://img.shields.io/github/languages/code-size/ErickWhiteDev/portfolio?label=Portfolio%20Repo%20Size&style=flat-square">
 </p>
 
 ## This is a website with some information about me, my accomplishments, my skills, and more.
