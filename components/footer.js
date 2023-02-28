@@ -27,7 +27,7 @@ let footer = `
             </fieldset>
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-        <div id="confirmation">Thank you! Your response has been submitted!</div>
+        <h3 id="confirmation">Thank you! Your response has been submitted!</h3>
     </div>
 `;
 
