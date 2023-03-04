@@ -92,6 +92,18 @@ svg {
     }
 }
 
+#page-menu {
+    display: inline;
+    background-color: var(--primary-dark);
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 3.5rem;
+}
+
 #menu-button {
     display: inline;
     background-color: #0000;
@@ -139,10 +151,6 @@ nav {
     z-index: 2;
     transition-duration: 0.5s;
     display: block;
-}
-
-.hidden {
-    display: none;
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
@@ -226,6 +234,10 @@ nav .resume:hover {
 menu {
     margin: 0;
     padding: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 header {

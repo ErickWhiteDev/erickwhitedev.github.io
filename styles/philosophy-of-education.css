@@ -2,8 +2,6 @@
     display: grid;
     max-width: 100%;
     grid-template-areas:
-            "title"
-            "explanation"
             "philosophy-of-education";
 }
 
@@ -33,6 +31,7 @@
     padding: 1rem;
     text-align: center;
     background-color: var(--primary-light);
+    border-top: var(--accent-light) solid 0.25rem;
     border-bottom: var(--accent-light) solid 0.25rem;
 }
 
@@ -40,11 +39,6 @@
     .container {
         padding: 3rem;
     }
-}
-
-#title {
-    color: var(--accent-light);
-    font-size: xx-large;
 }
 
 #philosophy-of-education {
