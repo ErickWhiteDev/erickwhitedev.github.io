@@ -3,7 +3,8 @@
     max-width: 100%;
     grid-template-areas:
         "solid-liquid-hybrid"
-        "estes-rocket";
+        "estes-rocket"
+        "icm-2023";
 }
 
 @media (min-width: 1024px) {
@@ -12,7 +13,8 @@
         padding: 0;
         grid-template-areas:
             "solid-liquid-hybrid solid-liquid-hybrid-content"
-            "estes-rocket-content estes-rocket";
+            "estes-rocket-content estes-rocket"
+            "icm-2023 icm-2023-content";
         grid-gap: 0;
     }
 }
@@ -92,9 +94,15 @@ button {
     }
 }
 
-.video {
+iframe {
     width: 100%;
     height: 100%;
+    border: none;
+}
+
+img {
+    width: 50%;
+    margin: auto;
 }
 
 #solid-liquid-hybrid {
@@ -113,4 +121,13 @@ button {
 #estes-rocket-content {
     grid-area: estes-rocket-content;
     max-height: 100%;
+}
+
+#icm-2023 {
+    grid-area: icm-2023;
+}
+
+#icm-2023-content {
+    grid-area: icm-2023-content;
+    max-width: 100%;
 }

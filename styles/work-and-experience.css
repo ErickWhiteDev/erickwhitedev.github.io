@@ -1,0 +1,85 @@
+.work-and-experience-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+        "omitron-cara";
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .work-and-experience-grid {
+        margin: auto;
+        padding: 1rem;
+        grid-template-areas:
+       "omitron-cara";
+        grid-gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .work-and-experience-grid {
+        grid-template-areas:
+        "omitron-cara";
+    }
+}
+
+@media (min-width: 1440px){
+    .work-and-experience-grid {
+        max-width: 70%;
+        grid-template-areas:
+        "omitron-cara";
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    transition-duration: 0.25s;
+}
+
+@media (min-width: 768px) {
+    .container {
+        border: 0.25rem solid;
+        border-radius: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container:hover {
+        background-color: var(--primary-light);
+        transition-duration: 0.25s;
+    }
+}
+
+.light {
+    background-color: var(--primary-light);
+}
+
+@media (min-width: 768px) {
+    .light {
+        background-color: var(--primary-background);
+        border-color: var(--accent-light);
+    }
+}
+
+.dark {
+    background-color: var(--primary-background);
+}
+
+@media (min-width: 768px) {
+    .dark {
+        background-color: var(--primary-background);
+        border-color: var(--accent-dark);
+    }
+}
+
+#omitron-cara {
+    grid-area: omitron-cara;
+}

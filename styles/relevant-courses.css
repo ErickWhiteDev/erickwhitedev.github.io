@@ -5,7 +5,9 @@
         "asen-1403"
         "appm-2360"
         "asen-2012"
-        "csci-2270";
+        "csci-2270"
+        "appm-3310"
+        "csci-2400";
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
 }
@@ -16,7 +18,8 @@
         padding: 1rem;
         grid-template-areas:
         "asen-1403 appm-2360"
-        "asen-2012 csci-2270";
+        "asen-2012 csci-2270"
+        "appm-3310 csci-2400";
         grid-gap: 1rem;
     }
 }
@@ -25,7 +28,8 @@
     .relevant-courses-grid {
         grid-template-areas:
         "asen-1403 appm-2360"
-        "asen-2012 csci-2270";
+        "asen-2012 csci-2270"
+        "appm-3310 csci-2400";
     }
 }
 
@@ -34,7 +38,7 @@
         max-width: 70%;
         grid-template-areas:
         "asen-1403 appm-2360 asen-2012"
-        ".         csci-2270  .        ";
+        "csci-2270 appm-3310 csci-2400";
     }
 }
 
@@ -100,4 +104,12 @@
 
 #csci-2270 {
     grid-area: csci-2270;
+}
+
+#appm-3310 {
+    grid-area: appm-3310;
+}
+
+#csci-2400 {
+    grid-area: csci-2400;
 }
