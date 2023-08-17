@@ -151,6 +151,7 @@ nav {
     z-index: 2;
     transition-duration: 0.5s;
     display: block;
+    overflow-y: scroll;
 }
 
 @media (min-width: 768px) and (max-width: 899px) {

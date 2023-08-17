@@ -48,6 +48,12 @@
 }
 
 @media (min-width: 1024px) {
+    .text {
+        background-color: var(--primary-background);
+    }
+}
+
+@media (min-width: 1024px) {
     .right {
         text-align: left;
     }
@@ -88,6 +94,7 @@ button {
     display: none;
     border: 0;
     border-radius: 0;
+    background-color: var(--primary-light);
 }
 
 @media (min-width: 1024px) {
