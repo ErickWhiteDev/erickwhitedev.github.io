@@ -18,8 +18,9 @@ let pageMenu = `
             <li class="nav-item dropdown"><a>What I Do ▼</a></li>
             <ul class="nav-dropdown">
                 <li class="nav-item-dropdown"><a href="projects.html">Projects</a></li>
-                <li class="nav-item-dropdown"><a href="relevant-courses.html">Relevant Courses</a></li>
+                <li class="nav-item-dropdown"><a href="writing.html">Writing</a></li>
                 <li class="nav-item-dropdown"><a href="work-and-experience.html">Work and Experience</a></li>
+                <li class="nav-item-dropdown"><a href="relevant-courses.html">Relevant Courses</a></li>
             </ul>
             <li class="nav-item resume"><a href="resume.html">Résumé</a></li>
         </ul>
@@ -29,7 +30,6 @@ let pageMenu = `
 // TODO: Fill out these pages and add them to the nav dropdown submenu
 /*
                 <li class="nav-item-dropdown"><a href="creative-work.html">Creative Work</a></li>
-                <li class="nav-item-dropdown"><a href="writing.html">Writing</a></li>
  */
 
 document.getElementById("page-menu").innerHTML = pageMenu;

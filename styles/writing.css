@@ -1,20 +1,16 @@
-.projects-grid {
+.writing-grid {
     display: grid;
     max-width: 100%;
     grid-template-areas:
-        "solid-liquid-hybrid"
-        "estes-rocket"
         "icm-2023";
     grid-auto-columns: 1fr;
 }
 
 @media (min-width: 1024px) {
-    .projects-grid {
+    .writing-grid {
         max-width: 100%;
         padding: 0;
         grid-template-areas:
-            "solid-liquid-hybrid solid-liquid-hybrid-content"
-            "estes-rocket-content estes-rocket"
             "icm-2023 icm-2023-content";
         grid-auto-columns: 1fr;
         grid-gap: 0;
@@ -84,14 +80,14 @@ button {
     }
 }
 
-.projects-content {
+.writing-content {
     display: none;
     border: 0;
     border-radius: 0;
 }
 
 @media (min-width: 1024px) {
-    .projects-content {
+    .writing-content {
         display: block;
     }
 }
@@ -105,24 +101,6 @@ iframe {
 img {
     width: 50%;
     margin: auto;
-}
-
-#solid-liquid-hybrid {
-    grid-area: solid-liquid-hybrid;
-}
-
-#solid-liquid-hybrid-content {
-    grid-area: solid-liquid-hybrid-content;
-    max-height: 100%;
-}
-
-#estes-rocket {
-    grid-area: estes-rocket;
-}
-
-#estes-rocket-content {
-    grid-area: estes-rocket-content;
-    max-height: 100%;
 }
 
 #icm-2023 {

@@ -20,6 +20,8 @@
         "asen-1403 appm-2360"
         "asen-2012 csci-2270"
         "appm-3310 csci-2400";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
         grid-gap: 1rem;
     }
 }
@@ -30,6 +32,8 @@
         "asen-1403 appm-2360"
         "asen-2012 csci-2270"
         "appm-3310 csci-2400";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
     }
 }
 
@@ -39,6 +43,8 @@
         grid-template-areas:
         "asen-1403 appm-2360 asen-2012"
         "csci-2270 appm-3310 csci-2400";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
     }
 }
 

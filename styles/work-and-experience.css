@@ -13,6 +13,8 @@
         padding: 1rem;
         grid-template-areas:
        "omitron-cara";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
         grid-gap: 1rem;
     }
 }
@@ -21,6 +23,8 @@
     .work-and-experience-grid {
         grid-template-areas:
         "omitron-cara";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
     }
 }
 
@@ -29,6 +33,8 @@
         max-width: 70%;
         grid-template-areas:
         "omitron-cara";
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
     }
 }
 
@@ -80,6 +86,31 @@
     }
 }
 
-#omitron-cara {
+button {
+    background-color: #00000000;
+    border: 0;
+}
+
+@media (min-width: 1024px) {
+    .expand-button {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .hidden {
+        display: block;
+    }
+
+    li.hidden {
+        display: list-item;
+    }
+}
+
+#omitron-cara-2023 {
     grid-area: omitron-cara;
 }

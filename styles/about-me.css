@@ -7,6 +7,7 @@
         "projects"
         "fun-facts"
         "hobbies";
+    grid-auto-columns: 1fr;
 }
 
 @media (min-width: 1024px) {
@@ -19,6 +20,7 @@
             "projects img-3"
             "img-4 fun-facts"
             "hobbies img-5";
+        grid-auto-columns: 1fr;
         grid-gap: 0;
     }
 }
