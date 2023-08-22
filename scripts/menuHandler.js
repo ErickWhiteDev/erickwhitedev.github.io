@@ -1,17 +1,20 @@
 let menuButton = document.getElementById("menu-button");
 let menu = document.getElementById("menu");
+let bar = document.getElementById("menu-top-bar");
 let main = document.querySelector("main");
 let navWidth;
 let menuOpened;
 
 function openMenu() {
     menu.style.left = "0px";
+    bar.style.left = "0px";
     main.style.filter = "blur(10px)";
     menuOpened = true;
 }
 
 function closeMenu() {
     menu.style.left = navWidth;
+    bar.style.left = navWidth;
     main.style.filter = "blur(0px)";
     menuOpened = false;
 }
@@ -54,11 +57,13 @@ window.onload = () => {
 window.onresize = () => {
     setup();
     menu.style.display = "none";
+    bar.style.display = "none";
 }
 
 window.addEventListener("resize", endResize(
     () => {
         menu.style.display = "block";
+        bar.style.display = "block";
         }
     )
 );

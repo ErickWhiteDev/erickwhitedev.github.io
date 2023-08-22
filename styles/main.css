@@ -151,7 +151,8 @@ nav {
     z-index: 2;
     transition-duration: 0.5s;
     display: block;
-    overflow-y: scroll;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
@@ -230,6 +231,47 @@ nav .resume:hover {
 
 .spacer {
     height: 3.5rem;
+}
+
+#menu-top-bar {
+    display: block;
+    height: 3.5rem;
+    width: 100%;
+    background-color: var(--primary-light);
+    position: fixed;
+    top: 0;
+    left: calc(0px - 100%);
+    z-index: 4;
+    transition-duration: 0.5s;
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    #menu-top-bar {
+        width: 50%;
+        left: calc(0px - 50%);
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    #menu-top-bar {
+        width: 40%;
+        left: calc(0px - 40%);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    #menu-top-bar {
+        width: 30%;
+        left: calc(0px - 30%);
+    }
+}
+
+@media (min-width: 1440px) {
+    #menu-top-bar {
+        width: 20%;
+        left: calc(0px - 20%);
+    }
 }
 
 menu {

@@ -10,6 +10,7 @@ let pageMenu = `
         </svg>
     </button>
     <nav id="menu">
+        <div id="menu-top-bar"></div>
         <div class="spacer"></div>
         <ul>
             <li class="nav-item"><a href="index.html">Home</a></li>
