@@ -15,8 +15,8 @@
         margin: auto;
         padding: 1rem;
         grid-template-areas:
-        "intro           mission"
-        "info         leadership";
+        "intro    mission"
+        "info  leadership";
         grid-auto-rows: 1fr;
         grid-auto-columns: 1fr;
         grid-gap: 1rem;

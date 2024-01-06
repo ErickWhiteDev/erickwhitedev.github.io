@@ -1,5 +1,21 @@
-.intro {
+.light {
+    background-color: var(--primary-light);
+}
 
+@media (min-width: 768px) {
+    .light {
+        background-color: var(--primary-background);
+    }
+}
+
+.dark {
+    background-color: var(--primary-background);
+}
+
+@media (min-width: 768px) {
+    .dark {
+        background-color: var(--primary-background);
+    }
 }
 
 button {
