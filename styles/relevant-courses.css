@@ -1,54 +1,193 @@
+.intro {
+
+}
+
+button {
+    background-color: #00000000;
+    border: 0;
+}
+
+.hidden {
+    display: none;
+}
+
 .relevant-courses-grid {
     display: grid;
     max-width: 100%;
     grid-template-areas:
-        "asen-1403"
-        "appm-2360"
-        "asen-2012"
-        "csci-2270"
-        "appm-3310"
-        "csci-2400";
-    grid-auto-rows: 1fr;
+        "intro"
+        "aerospace-software-development-header"
+        "aerospace-software-development"
+        "astrodynamics-header"
+        "astrodynamics"
+        "thermo-aero-fluid-dynamics-header"
+        "thermo-aero-fluid-dynamics";
     grid-auto-columns: 1fr;
+    justify-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+    text-align: center;
+    transition-duration: 0.25s;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 3rem;
+    }
+}
+
+.aerospace-software-development-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+        "appm-2360-aerospace-software-development"
+        "asen-2012-aerospace-software-development"
+        "csci-2270-aerospace-software-development"
+        "csci-2400-aerospace-software-development"
+        "appm-3310-aerospace-software-development"
+        "appm-3170-aerospace-software-development"
+        "csci-3104-aerospace-software-development";
 }
 
 @media (min-width: 768px) {
-    .relevant-courses-grid {
+    .aerospace-software-development-grid {
         margin: auto;
         padding: 1rem;
         grid-template-areas:
-        "asen-1403 appm-2360"
-        "asen-2012 csci-2270"
-        "appm-3310 csci-2400";
-        grid-auto-rows: 1fr;
-        grid-auto-columns: 1fr;
+        "appm-2360-aerospace-software-development asen-2012-aerospace-software-development"
+        "csci-2270-aerospace-software-development csci-2400-aerospace-software-development"
+        "appm-3310-aerospace-software-development appm-3170-aerospace-software-development"
+        "csci-3104-aerospace-software-development csci-3104-aerospace-software-development";
         grid-gap: 1rem;
     }
 }
 
 @media (min-width: 1024px) {
-    .relevant-courses-grid {
+    .aerospace-software-development-grid {
         grid-template-areas:
-        "asen-1403 appm-2360"
-        "asen-2012 csci-2270"
-        "appm-3310 csci-2400";
-        grid-auto-rows: 1fr;
-        grid-auto-columns: 1fr;
+        "appm-2360-aerospace-software-development asen-2012-aerospace-software-development"
+        "csci-2270-aerospace-software-development csci-2400-aerospace-software-development"
+        "appm-3310-aerospace-software-development appm-3170-aerospace-software-development"
+        "csci-3104-aerospace-software-development csci-3104-aerospace-software-development";
     }
 }
 
 @media (min-width: 1440px){
-    .relevant-courses-grid {
+    .aerospace-software-development-grid {
         max-width: 70%;
         grid-template-areas:
-        "asen-1403 appm-2360 asen-2012"
-        "csci-2270 appm-3310 csci-2400";
-        grid-auto-rows: 1fr;
-        grid-auto-columns: 1fr;
+        "appm-2360-aerospace-software-development asen-2012-aerospace-software-development csci-2270-aerospace-software-development"
+        "csci-2400-aerospace-software-development appm-3310-aerospace-software-development appm-3170-aerospace-software-development"
+        ". csci-3104-aerospace-software-development .";
     }
 }
 
-.container {
+.astrodynamics-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+        "appm-2360-astrodynamics"
+        "asen-2012-astrodynamics"
+        "appm-3310-astrodynamics"
+        "asen-2703-astrodynamics"
+        "asen-2704-astrodynamics";
+}
+
+@media (min-width: 768px) {
+    .astrodynamics-grid {
+        margin: auto;
+        padding: 1rem;
+        grid-template-areas:
+        "appm-2360-astrodynamics asen-2012-astrodynamics"
+        "appm-3310-astrodynamics asen-2703-astrodynamics"
+        "asen-2704-astrodynamics asen-2704-astrodynamics";
+        grid-gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .astrodynamics-grid {
+        grid-template-areas:
+        "appm-2360-astrodynamics asen-2012-astrodynamics"
+        "appm-3310-astrodynamics asen-2703-astrodynamics"
+        "asen-2704-astrodynamics asen-2704-astrodynamics";
+    }
+}
+
+@media (min-width: 1440px){
+    .astrodynamics-grid {
+        max-width: 70%;
+        grid-template-areas:
+        "appm-2360-astrodynamics asen-2012-astrodynamics appm-3310-astrodynamics"
+        "asen-2703-astrodynamics . asen-2704-astrodynamics";
+    }
+}
+
+.thermo-aero-fluid-dynamics-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+        "appm-2360-thermo-aero-fluid-dynamics"
+        "asen-2012-thermo-aero-fluid-dynamics"
+        "asen-1403-thermo-aero-fluid-dynamics"
+        "asen-2702-thermo-aero-fluid-dynamics";
+}
+
+@media (min-width: 768px) {
+    .thermo-aero-fluid-dynamics-grid {
+        margin: auto;
+        padding: 1rem;
+        grid-template-areas:
+        "appm-2360-thermo-aero-fluid-dynamics asen-2012-thermo-aero-fluid-dynamics"
+        "asen-1403-thermo-aero-fluid-dynamics asen-2702-thermo-aero-fluid-dynamics";
+        grid-gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .thermo-aero-fluid-dynamics-grid {
+        grid-template-areas:
+        "appm-2360-thermo-aero-fluid-dynamics asen-2012-thermo-aero-fluid-dynamics"
+        "asen-1403-thermo-aero-fluid-dynamics asen-2702-thermo-aero-fluid-dynamics";
+    }
+}
+
+@media (min-width: 1440px){
+    .thermo-aero-fluid-dynamics-grid {
+        max-width: 70%;
+        grid-template-areas:
+        "appm-2360-thermo-aero-fluid-dynamics asen-2012-thermo-aero-fluid-dynamics asen-1403-thermo-aero-fluid-dynamics"
+        ". asen-2702-thermo-aero-fluid-dynamics .";
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    max-height: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: var(--accent-light) solid 0.25rem;
+}
+
+@media (min-width: 1440px){
+    .header-container {
+        width: 70%;
+    }
+}
+
+.box-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,61 +200,117 @@
 }
 
 @media (min-width: 768px) {
-    .container {
+    .box-container {
         border: 0.25rem solid;
         border-radius: 1rem;
     }
 }
 
 @media (min-width: 1024px) {
-    .container:hover {
+    .box-container:hover {
         background-color: var(--primary-light);
         transition-duration: 0.25s;
     }
 }
 
-.light {
+.box-light {
     background-color: var(--primary-light);
 }
 
 @media (min-width: 768px) {
-    .light {
+    .box-light {
         background-color: var(--primary-background);
         border-color: var(--accent-light);
     }
 }
 
-.dark {
+.box-dark {
     background-color: var(--primary-background);
 }
 
 @media (min-width: 768px) {
-    .dark {
+    .box-dark {
         background-color: var(--primary-background);
         border-color: var(--accent-dark);
     }
 }
 
-#asen-1403 {
-    grid-area: asen-1403;
+#aerospace-software-development-header {
+    grid-area: aerospace-software-development-header;
 }
 
-#appm-2360 {
-    grid-area: appm-2360;
+#astrodynamics-header {
+    grid-area: astrodynamics-header;
 }
 
-#asen-2012 {
-    grid-area: asen-2012;
+#thermo-aero-fluid-dynamics-header {
+    grid-area: thermo-aero-fluid-dynamics-header;
 }
 
-#csci-2270 {
-    grid-area: csci-2270;
+#appm-2360-aerospace-software-development {
+    grid-area: appm-2360-aerospace-software-development;
 }
 
-#appm-3310 {
-    grid-area: appm-3310;
+#asen-2012-aerospace-software-development {
+    grid-area: asen-2012-aerospace-software-development;
 }
 
-#csci-2400 {
-    grid-area: csci-2400;
+#csci-2270-aerospace-software-development {
+    grid-area: csci-2270-aerospace-software-development;
+}
+
+#csci-2400-aerospace-software-development {
+    grid-area: csci-2400-aerospace-software-development;
+}
+
+#appm-3310-aerospace-software-development {
+    grid-area: appm-3310-aerospace-software-development;
+}
+
+#appm-3170-aerospace-software-development {
+    grid-area: appm-3170-aerospace-software-development;
+}
+
+#csci-3104-aerospace-software-development {
+    grid-area: csci-3104-aerospace-software-development;
+}
+
+#appm-2360-astrodynamics {
+    grid-area: appm-2360-astrodynamics;
+}
+
+#asen-2012-astrodynamics {
+    grid-area: asen-2012-astrodynamics;
+}
+
+#appm-3310-astrodynamics {
+    grid-area: appm-3310-astrodynamics;
+}
+
+#appm-3170-astrodynamics {
+    grid-area: appm-3170-astrodynamics;
+}
+
+#asen-2703-astrodynamics {
+    grid-area: asen-2703-astrodynamics;
+}
+
+#asen-2704-astrodynamics {
+    grid-area: asen-2704-astrodynamics;
+}
+
+#appm-2360-thermo-aero-fluid-dynamics {
+    grid-area: appm-2360-thermo-aero-fluid-dynamics;
+}
+
+#asen-2012-thermo-aero-fluid-dynamics {
+    grid-area: asen-2012-thermo-aero-fluid-dynamics;
+}
+
+#asen-1403-thermo-aero-fluid-dynamics {
+    grid-area: asen-1403-thermo-aero-fluid-dynamics;
+}
+
+#asen-2702-thermo-aero-fluid-dynamics {
+    grid-area: asen-2702-thermo-aero-fluid-dynamics;
 }
