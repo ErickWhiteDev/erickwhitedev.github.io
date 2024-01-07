@@ -2,7 +2,8 @@
     display: grid;
     max-width: 100%;
     grid-template-areas:
-        "icm-2023";
+        "icm-2023"
+        "appm-3310-final-project";
     grid-auto-columns: 1fr;
 }
 
@@ -11,7 +12,8 @@
         max-width: 100%;
         padding: 0;
         grid-template-areas:
-            "icm-2023 icm-2023-content";
+            "icm-2023 icm-2023-content"
+            "appm-3310-final-project-content appm-3310-final-project";
         grid-auto-columns: 1fr;
         grid-gap: 0;
     }
@@ -116,5 +118,14 @@ img {
 
 #icm-2023-content {
     grid-area: icm-2023-content;
+    max-width: 100%;
+}
+
+#appm-3310-final-project {
+    grid-area: appm-3310-final-project;
+}
+
+#appm-3310-final-project-content {
+    grid-area: appm-3310-final-project-content;
     max-width: 100%;
 }
