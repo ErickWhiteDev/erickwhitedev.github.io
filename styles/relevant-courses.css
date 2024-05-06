@@ -154,7 +154,9 @@ button {
         "appm-2360-thermo-aero-fluid-dynamics"
         "asen-2012-thermo-aero-fluid-dynamics"
         "asen-1403-thermo-aero-fluid-dynamics"
-        "asen-2702-thermo-aero-fluid-dynamics";
+        "asen-2702-thermo-aero-fluid-dynamics"
+        "asen-2703-thermo-aero-fluid-dynamics"
+        "asen-2704-thermo-aero-fluid-dynamics";
 }
 
 @media (min-width: 768px) {
@@ -163,7 +165,8 @@ button {
         padding: 1rem;
         grid-template-areas:
         "appm-2360-thermo-aero-fluid-dynamics asen-2012-thermo-aero-fluid-dynamics"
-        "asen-1403-thermo-aero-fluid-dynamics asen-2702-thermo-aero-fluid-dynamics";
+        "asen-1403-thermo-aero-fluid-dynamics asen-2702-thermo-aero-fluid-dynamics"
+        "asen-2703-thermo-aero-fluid-dynamics asen-2704-thermo-aero-fluid-dynamics";
         grid-gap: 1rem;
     }
 }
@@ -172,7 +175,8 @@ button {
     .thermo-aero-fluid-dynamics-grid {
         grid-template-areas:
         "appm-2360-thermo-aero-fluid-dynamics asen-2012-thermo-aero-fluid-dynamics"
-        "asen-1403-thermo-aero-fluid-dynamics asen-2702-thermo-aero-fluid-dynamics";
+        "asen-1403-thermo-aero-fluid-dynamics asen-2702-thermo-aero-fluid-dynamics"
+        "asen-2703-thermo-aero-fluid-dynamics asen-2704-thermo-aero-fluid-dynamics";
     }
 }
 
@@ -181,7 +185,7 @@ button {
         max-width: 70%;
         grid-template-areas:
         "appm-2360-thermo-aero-fluid-dynamics asen-2012-thermo-aero-fluid-dynamics asen-1403-thermo-aero-fluid-dynamics"
-        ". asen-2702-thermo-aero-fluid-dynamics .";
+        "asen-2702-thermo-aero-fluid-dynamics asen-2703-thermo-aero-fluid-dynamics asen-2704-thermo-aero-fluid-dynamics";
     }
 }
 
@@ -329,4 +333,12 @@ button {
 
 #asen-2702-thermo-aero-fluid-dynamics {
     grid-area: asen-2702-thermo-aero-fluid-dynamics;
+}
+
+#asen-2703-thermo-aero-fluid-dynamics {
+    grid-area: asen-2703-thermo-aero-fluid-dynamics;
+}
+
+#asen-2704-thermo-aero-fluid-dynamics {
+    grid-area: asen-2704-thermo-aero-fluid-dynamics;
 }
