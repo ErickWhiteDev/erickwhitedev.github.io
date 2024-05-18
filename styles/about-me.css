@@ -2,26 +2,22 @@
     display: grid;
     max-width: 100%;
     grid-template-areas:
-        "history"
-        "organizations"
-        "projects"
-        "fun-facts"
-        "hobbies";
-    grid-auto-columns: 1fr;
+            "about-me";
 }
 
 @media (min-width: 1024px) {
     .about-me-grid {
-        max-width: 100%;
+        max-width: 70%;
         padding: 0;
-        grid-template-areas:
-            "history img-1"
-            "img-2 organizations"
-            "projects img-3"
-            "img-4 fun-facts"
-            "hobbies img-5";
-        grid-auto-columns: 1fr;
-        grid-gap: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-me-grid {
+        max-width: 50%;
+        padding: 0;
+        margin: auto;
     }
 }
 
@@ -34,7 +30,9 @@
     max-height: 100%;
     padding: 1rem;
     text-align: center;
-    transition-duration: 0.25s;
+    background-color: var(--primary-light);
+    border-top: var(--accent-light) solid 0.25rem;
+    border-bottom: var(--accent-light) solid 0.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -43,119 +41,6 @@
     }
 }
 
-.light {
-    background-color: var(--primary-light);
-}
-
-.dark {
-    background-color: var(--primary-background);
-}
-
-@media (min-width: 1024px) {
-    .right {
-        text-align: left;
-    }
-}
-
-@media (min-width: 1024px) {
-    .left {
-        text-align: right;
-    }
-}
-
-button {
-    background-color: #00000000;
-    border: 0;
-}
-
-@media (min-width: 1024px) {
-    .expand-button {
-        display: none;
-    }
-}
-
-.hidden {
-    display: none;
-}
-
-@media (min-width: 1024px) {
-    .hidden {
-        display: block;
-    }
-
-    li.hidden {
-        display: list-item;
-    }
-}
-
-.image {
-    display: none;
-    border: 0;
-    border-radius: 0;
-}
-
-@media (min-width: 1024px) {
-    .image {
-        display: block;
-    }
-}
-
-#history {
-    grid-area: history;
-}
-
-#organizations {
-    grid-area: organizations;
-}
-
-#projects {
-    grid-area: projects;
-}
-
-#fun-facts {
-    grid-area: fun-facts;
-}
-
-#hobbies {
-    grid-area: hobbies;
-}
-
-#img-1 {
-    grid-area: img-1;
-    max-height: 100%;
-    background-image: url("/assets/images/gallery/misc/pink-flower-cluster.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-#img-2 {
-    grid-area: img-2;
-    max-height: 100%;
-    background-image: url("/assets/images/gallery/misc/moon.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-#img-3 {
-    grid-area: img-3;
-    max-height: 100%;
-    background-image: url("/assets/images/gallery/washington-dc-trip/washington-monument-sunset.JPG");
-    background-size: cover;
-    background-position: top;
-}
-
-#img-4 {
-    grid-area: img-4;
-    max-height: 100%;
-    background-image: url("/assets/images/gallery/rmss/2017/saturn.JPG");
-    background-size: cover;
-    background-position: bottom;
-}
-
-#img-5 {
-    grid-area: img-5;
-    max-height: 100%;
-    background-image: url("/assets/images/gallery/rmss/2022/rachel.jpg");
-    background-size: cover;
-    background-position: center;
+#about-me {
+    grid-area: about-me;
 }

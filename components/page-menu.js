@@ -23,6 +23,7 @@ let pageMenu = `
                 <li class="nav-item-dropdown"><a href="work-and-experience.html">Work and Experience</a></li>
                 <li class="nav-item-dropdown"><a href="relevant-courses.html">Relevant Courses</a></li>
             </ul>
+            <li class="nav-item"><a href="just-for-fun.html">Just For Fun</a></li>
             <li class="nav-item resume"><a href="resume.html">Résumé</a></li>
         </ul>
     </nav>
