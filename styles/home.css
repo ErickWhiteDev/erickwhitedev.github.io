@@ -119,7 +119,7 @@
     display: none;
     grid-area: photo;
     max-height: 100%;
-    background-image: url("/assets/images/erick-white.png");
+    background-image: url("/assets/images/erick-white.jpg");
     background-size: cover;
     background-position: center 0;
 }
