@@ -13,6 +13,11 @@ let footer = `
                 <use href="assets/svg/email-logo.svg#email-logo"/>
             </svg>
         </a>
+        <a class="social-link" href="https://www.linkedin.com/in/erick-white-986188331/" target="_blank" rel="noopener noreferrer">
+            <svg>
+                <use href="assets/svg/linkedin-logo.svg#linkedin-logo"/>
+            </svg>
+        </a>
     </div>
     <div class="survey">
         <form action="https://docs.google.com/forms/d/e/1FAIpQLScXgfCx44FbTs9W1XjOAyrSTc1i2XPvYFwpeVHOAbqGAs3aeg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
