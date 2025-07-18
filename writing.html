@@ -41,35 +41,56 @@
     </header>
 
     <div class="writing-grid">
-      <article class="container dark text left" id="icm-2023">
-        <h3>COMAP ICM 2023</h3>
+      <div class="container writing-content" id="appm-4610-final-project-content">
+        <img src="assets/images/writing/appm-4610-final-project-content.png" alt="A sensitivity analysis between the RK4 and Verlet integration methods.">
+      </div>
+
+      <div class="container dark text right" id="appm-4610-final-project">
+        <h3><em>Analyzing and Solving the N-Body Problem</em></h3>
         <p>
-          As a member of a team of three, I participated in the <a class="link" href="https://www.contest.comap.com/undergraduate/contests/index.html" target="_blank" rel="noopener noreferrer">Interdisciplinary Contest in Modeling</a>, a yearly competition in which thousands of teams around the world pick one problem out of three (or a separate set of three for the closely-related Mathematical Contest in Modeling), research the problem, develop a model to represent the situation at hand, and write a paper with their results, all over the span of only 100 hours.
-          This year, my team tackled a problem regarding the United Nations' Sustainable Development Goals (SDGs) and how to best prioritize them to create the most beneficial change over the next decade.
-          The paper won an Honorable Mention, meaning it was in the top 30% of papers submitted for that particular problem.
-          Download our paper <a class="link" href="assets/docs/writing/comap-2023.pdf" target="_blank" rel="noopener noreferrer">here</a>, or view a repository with the paper and code <a class="link" href="https://github.com/ErickWhiteDev/COMAP_2023" target="_blank" rel="noopener noreferrer">here</a>!
+          Following my numerical analysis class, I decided to also take numerical differential equations - and, similar to numerical analysis, it, too, had a final project that involved building on a topic we covered in class.
+          I teamed up with <a class="link" href="https://edward.wawrzynek.com/" target="_blank" rel="noopener noreferrer">Edward Wawrzynek</a> again, as well as
+          <a class="link" href="https://sites.google.com/colorado.edu/brycepfuetze/home" target="_blank" rel="noopener noreferrer">Bryce Pfuetze</a>, and we decided to tackle the <em>N</em>-body problem, a common problem across engineering and physics fields.
+          Specifically, since this problem has no analytical solution, we decided to focus on understanding and tackling the inherent stiffness in the problem; we also studied symplectic integrators and their useful energy-conservation properties.
+          We compared our own implementations of the Euler, RK2, RK4, and Stormer-Verlet methods and studied energy error over time; we also compared integrated ephemerides to those given by the JPL Horizons database.
+          This work led directly into my <a class="link" href="work-and-experience.html#csml-2025" target="_blank" rel="noopener norefferer">work at the Celestial and Spaceflight Mechanics Laboratory</a>.
+          Download our paper <a class="link" href="assets/docs/writing/appm-4610-final-project.pdf" target="_blank" rel="noopener noreferrer">here</a>, or check out our code repository
+          <a class="link" href="https://github.com/brycepfuetze/APPM-4610-stiff-ODEs" target="_blank" rel="noopener noreferrer">here</a>!
         </p>
-      </article>
-
-      <div class="container writing-content" id="icm-2023-content">
-        <img src="assets/images/writing/icm-2023.jpg" alt="My ICM 2023 team">
       </div>
 
-      <div class="container writing-content" id="appm-3310-final-project-content">
-        <img src="assets/images/writing/appm-3310-final-project.png" alt="A plot of a satellite's orbit around the Earth">
-      </div>
-
-      <div class="container dark text right" id="appm-3310-final-project">
-        <h3><em>Applications of Covariance Matrices and Jacobians in Orbital Mechanics</em></h3>
+      <div class="container dark text left" id="mcm-2025">
+        <h3>COMAP MCM 2025</h3>
         <p>
-          My partner <a class="link" href="https://sites.google.com/view/audrarissmeyer/home" target="_blank" rel="noopener noreferrer">Audra Rissmeyer</a> and I wrote this paper as our final report for our <a class="link" href="relevant-courses.html#appm-3310-astrodynamics">applied matrix methods class</a>.
-          The paper explored the concepts of observational covariance matrices, transformations between celestial
-          coordinate systems, and transformations of covariance matrices (and why these transformations would be done).
-          We used MATLAB functions provided by NASA CARA to run the transformations discussed in Alfano and Vallado’s
-          <em>Updated Analytical Partials for Covariance Transformations and Optimization</em> and illustrated covariance
-          through our own MATLAB visualizations. We also illustrated the difference between Cartesian and equinoctial
-          covariance distributions and briefly explained the significance that these distributions have.
-          Download our paper <a class="link" href="assets/docs/writing/appm-3310-final-project.pdf" target="_blank" rel="noopener noreferrer">here</a>, or view a repository with the paper and code <a class="link" href="https://github.com/ErickWhiteDev/Matrix-Methods-For-Orbital-Mechanics" target="_blank" rel="noopener noreferrer">here</a>!
+          Once again, <a class="link" href="http://www.linkedin.com/in/elizabethscutting" target="_blank" rel="noopener noreferrer">Elizabeth Cutting</a>,
+          <a class="link" href="https://www.linkedin.com/in/madison-p-jones" target="_blank" rel="noopener noreferrer">Madison Jones</a>, and I decided to compete in a mathematical modeling competition - this time, in the
+          <a class="link" href="https://www.contest.comap.com/undergraduate/contests/index.html" target="_blank" rel="noopener noreferrer">Mathematical Contest in Modeling</a>, a more math-heavy variant of the
+          <a class="link" href="writing.html#icm-2023" target="_blank" rel="noopener noreferrer">Interdisciplinary Contest in Modeling</a> we partook in in 2023.
+          This year, we chose a problem focused on modeling wear on stairs, and using such wear patterns to inform archaeologists to the age of the stairs, their usage patterns, and other quantities that could be derived only from non-destructive measurements of the steps.
+          We chose to approach this by constructing an empirical distribution of footfalls on the stairs; from this distribution (we used a Gaussian mixtured model), we backed out values such as the means and covariances of the Gaussians which we then used to back out properties related to the age and usage of the stairs.
+          We again won an Honorable Mention for our work.
+          Download our paper <a class="link" href="assets/docs/writing/comap-2025.pdf" target="_blank" rel="noopener noreferrer">here</a>, or view a repository with the paper and code <a class="link" href="https://github.com/ErickWhiteDev/COMAP_2025" target="_blank" rel="noopener noreferrer">here</a>!
+        </p>
+      </div>
+
+      <div class="container writing-content" id="mcm-2025-content">
+        <img src="assets/images/writing/mcm-2025.png" alt="A Monte Carlo simulation of footfalls on a stair step.">
+      </div>
+
+      <div class="container writing-content" id="appm-4600-final-project-content">
+        <img src="assets/images/writing/appm-4600-final-project-content.png" alt="A spectrogram of an EMIC wave in Earth's magnetosphere.">
+      </div>
+
+      <div class="container dark text right" id="appm-4600-final-project">
+        <h3><em>Derivations and Applications of the Discrete, Fast, and Short-Time Fourier Transforms</em></h3>
+        <p>
+          My numerical analysis class included a final project that built on a topic we covered and presented results we had not previously discussed.
+          I teamed up with two of my friends from the <a class="link" href="https://cuengineeringhonors.com/" target="_blank" rel="noopener noreferrer">Engineering Honors Program</a> and we decided to study further the Fourier transform - an important tool in signal processing, electronics, and many other fields.
+          As part of <a class="link" href="work-and-experience.html#lair-2024" target="_blank" rel="noopener noreferrer">my work with the LAIR lab</a>, I had been exposed to the short-time Fourier transform, a tool used for generating spectrograms of time-varying signals; we utilized this knowledge, as well as
+          <a class="link" href="https://edward.wawrzynek.com/" target="_blank" rel="noopener noreferrer">Edward Wawrzynek's</a> experience working with frequency domain analysis, to explore the use cases of the discrete, fast, and short-time Fourier transforms.
+          We used several real-life datasets in this study as well, studying both patterns in weather around Boulder, Colorado and attempting to visualize some of the same EMIC waves I was studying in my research!
+          Download our paper <a class="link" href="assets/docs/writing/appm-4600-final-project.pdf" target="_blank" rel="noopener noreferrer">here</a>, or check out our code repository
+          <a class="link" href="https://github.com/ErickWhiteDev/APPM-4600-Final-Project" target="_blank" rel="noopener noreferrer">here</a>!
         </p>
       </div>
 
@@ -85,6 +106,40 @@
 
       <div class="container writing-content" id="asen-3036-semester-project-content">
         <img src="assets/images/writing/asen-3036-semester-project.png" alt="A concept of operations for a hypothetical crewed mission to Mars">
+      </div>
+
+      <div class="container writing-content" id="appm-3310-final-project-content">
+        <img src="assets/images/writing/appm-3310-final-project.png" alt="A plot of a satellite's orbit around the Earth">
+      </div>
+
+      <div class="container dark text right" id="appm-3310-final-project">
+        <h3><em>Applications of Covariance Matrices and Jacobians in Orbital Mechanics</em></h3>
+        <p>
+          My partner <a class="link" href="https://sites.google.com/view/audrarissmeyer/home" target="_blank" rel="noopener noreferrer">Audra Rissmeyer</a> and I wrote this paper as our final report for our applied matrix methods class.
+          The paper explored the concepts of observational covariance matrices, transformations between celestial
+          coordinate systems, and transformations of covariance matrices (and why these transformations would be done).
+          We used MATLAB functions provided by NASA CARA to run the transformations discussed in Alfano and Vallado’s
+          <em>Updated Analytical Partials for Covariance Transformations and Optimization</em> and illustrated covariance
+          through our own MATLAB visualizations. We also illustrated the difference between Cartesian and equinoctial
+          covariance distributions and briefly explained the significance that these distributions have.
+          Download our paper <a class="link" href="assets/docs/writing/appm-3310-final-project.pdf" target="_blank" rel="noopener noreferrer">here</a>, or view a repository with the paper and code <a class="link" href="https://github.com/ErickWhiteDev/Matrix-Methods-For-Orbital-Mechanics" target="_blank" rel="noopener noreferrer">here</a>!
+        </p>
+      </div>
+
+      <article class="container dark text left" id="icm-2023">
+        <h3>COMAP ICM 2023</h3>
+        <p>
+          As a member of a team of three, I participated in the <a class="link" href="https://www.contest.comap.com/undergraduate/contests/index.html" target="_blank" rel="noopener noreferrer">Interdisciplinary Contest in Modeling</a>, a yearly competition in which thousands of teams around the world pick one problem out of three (or a separate set of three for the closely-related Mathematical Contest in Modeling), research the problem, develop a model to represent the situation at hand, and write a paper with their results, all over the span of only 100 hours.
+          This year, my team tackled a problem regarding the United Nations' Sustainable Development Goals (SDGs) and how to best prioritize them to create the most beneficial change over the next decade.
+          The paper won an Honorable Mention, meaning it was in the top 30% of papers submitted for that particular problem; we also presented this paper at the
+          <a class="link" href="https://www.colorado.edu/amath/organizations/siam-undergraduate-chapter/2023-siam-front-range-student-conference" target="_blank" rel="noopener noreferrer">2023 SIAM Front Range Student Conference</a>, and it was accepted into the
+          <a class="link" href="https://journals.colorado.edu/index.php/honorsjournal/issue/view/205" target="_blank" rel="noopener noreferrer">2024 issue of the University of Colorado Honors Journal</a>.
+          Download our paper <a class="link" href="assets/docs/writing/comap-2023.pdf" target="_blank" rel="noopener noreferrer">here</a>, or view a repository with the paper and code <a class="link" href="https://github.com/ErickWhiteDev/COMAP_2023" target="_blank" rel="noopener noreferrer">here</a>!
+        </p>
+      </article>
+
+      <div class="container writing-content" id="icm-2023-content">
+        <img src="assets/images/writing/icm-2023.jpg" alt="My ICM 2023 team">
       </div>
     </div>
 

@@ -2,9 +2,12 @@
     display: grid;
     max-width: 100%;
     grid-template-areas:
-        "icm-2023"
+        "appm-4610-final-project"
+        "mcm-2025"
+        "appm-4600-final-project"
+        "asen-3036-semester-project"
         "appm-3310-final-project"
-        "asen-3036-semester-project";
+        "icm-2023";
     grid-auto-columns: 1fr;
 }
 
@@ -13,9 +16,12 @@
         max-width: 100%;
         padding: 0;
         grid-template-areas:
-            "icm-2023 icm-2023-content"
+            "appm-4610-final-project-content appm-4610-final-project"
+            "mcm-2025 mcm-2025-content"
+            "appm-4600-final-project-content appm-4600-final-project"
+            "asen-3036-semester-project asen-3036-semester-project-content"
             "appm-3310-final-project-content appm-3310-final-project"
-            "asen-3036-semester-project asen-3036-semester-project-content";
+            "icm-2023 icm-2023-content";
         grid-auto-columns: 1fr;
         grid-gap: 0;
     }
@@ -114,12 +120,36 @@ img {
     margin: auto;
 }
 
-#icm-2023 {
-    grid-area: icm-2023;
+#appm-4610-final-project {
+    grid-area: appm-4610-final-project;
 }
 
-#icm-2023-content {
-    grid-area: icm-2023-content;
+#appm-4600-final-project-content {
+    grid-area: appm-4600-final-project-content;
+}
+
+#mcm-2025 {
+    grid-area: mcm-2025;
+}
+
+#mcm-2025-final-project {
+    grid-area: mcm-2025-final-project;
+}
+
+#appm-4600-final-project {
+    grid-area: appm-4600-final-project;
+}
+
+#appm-4600-final-project-content {
+    grid-area: appm-4600-final-project-content;
+}
+
+#asen-3036-semester-project {
+    grid-area: asen-3036-semester-project;
+}
+
+#asen-3036-semester-project-content {
+    grid-area: asen-3036-semester-project-content;
     max-width: 100%;
 }
 
@@ -132,11 +162,11 @@ img {
     max-width: 100%;
 }
 
-#asen-3036-semester-project {
-    grid-area: asen-3036-semester-project;
+#icm-2023 {
+    grid-area: icm-2023;
 }
 
-#asen-3036-semester-project-content {
-    grid-area: asen-3036-semester-project-content;
+#icm-2023-content {
+    grid-area: icm-2023-content;
     max-width: 100%;
 }

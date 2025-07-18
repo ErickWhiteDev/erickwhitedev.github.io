@@ -23,6 +23,7 @@
     <link href="assets/favicon.ico?" type="image/x-icon" rel="shortcut icon">
     <script defer src="scripts/buttons/work-and-experience/expandButtonOmitronCARA2024.js" type="text/javascript"></script>
     <script defer src="scripts/buttons/work-and-experience/expandButtonOmitronCARA2023.js" type="text/javascript"></script>
+    <script defer src="scripts/buttons/work-and-experience/expandButtonLAIR2024.js" type="text/javascript"></script>
     <link href="styles/main.css" type="text/css" rel="stylesheet">
     <link href="styles/work-and-experience.css" type="text/css" rel="stylesheet">
     <title>Erick White - Work and Experience</title>
@@ -43,12 +44,45 @@
         </header>
 
         <div class="work-and-experience-grid">
+            <article class="container light" id="csml-2025">
+                <h3 class="stylized">Undergraduate Research Assistant - Celestial and Spaceflight Mechanics Laboratory (June 2025 - Present)</h3>
+                <p>
+                    For the summer following my third year of undergraduate studies, I decided to turn down an offer from the
+                    <a class="link" href="https://science.gsfc.nasa.gov/solarsystem/magnetospheres/" target="_blank" rel="noopener noreferrer">NASA Planetary Magnetospheres Lab</a> and instead further pursue my interests in mathematical and computational modeling with the
+                    <a class="link" href="https://ccar.colorado.edu/scheeres/" target="_blank" rel="noopener noreferrer">Celestial and Spaceflight Mechanics Laboratory</a> under the mentorship of
+                    <a class="link" href="https://www.colorado.edu/aerospace/daniel-scheeres" target="_blank" rel="noopener noreferrer">Dr. Daniel Scheeres</a>.
+                    In this position, I am developing methods for reliably integrating <em>N</em>-body mechanics (used here to model mutual gravitational attraction) with granular mechanics (used here to model contact dynamics) to better understand the dynamics of systems of asteroids.
+                    Specifically, I am interested in researching angular momentum and energy transfer when an asteroid is ejected from a cluster, along with the frequency of such an event.
+                    This work is heavily focused on numerical computation, with knowledge of both numerical analysis (<em>e.g.</em>, understanding integration schemes and their convergence properties, working with parallelization, <em>etc.</em>) and astrophysical processes.
+                </p>
+            </article>
+            <article class="container dark" id="lair-2024">
+                <h3 class="stylized">Undergraduate Research Assistant - Lightning, Atmosphere, Ionosphere, and Radiation Belt Research Group (August 2024 - May 2025)</h3>
+                <p>
+                    As part of the <a class="link" href="https://www.colorado.edu/engineering/discovery-learning-apprenticeship-dla-program" target="_blank" rel="noopener noreferrer">CU Boulder Discovery Learning Apprenticeship (DLA) Program</a>, I worked under
+                    <a class="link" href="https://www.colorado.edu/aerospace/robert-marshall" target="_blank" rel="noopener noreferrer">Dr. Robert Marshall</a> and Ph.D. student Paraksh Vankawala at the
+                    <a class="link" href="https://culair.weebly.com/" target="_blank" rel="noopener noreferrer">LAIR Lab</a> on detecting and analyzing plasma waves (specifically, EMIC waves) in the Earth's magnetosphere using Van Allen Probe data.
+                    During this work, I was exposed to a number of topics with which I had no prior experience, including space and plasma physics, machine learning, and scientific data analysis.
+                    I was responsible for finding a consistent and reliable method to visualize the waves, annotating and training a model to detect them, and performing analysis on the waves that I was able to find.
+                </p>
+                <button id="expand-lair-2024" aria-label="Expand LAIR 2024">
+                    <svg class="expand-button">
+                        <use href="assets/svg/expand.svg#expand"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="lair-2024-hidden">
+                    <p>
+                        As my first research position in academia, I gained valuable experience in learning how a research lab works, including working with Ph.D. students, attending and presenting at lab meetings, and communicating with a PI.
+                        At the end of the school year, I was chosen (as part of the DLA program) to present my work at a poster session representing undergraduate research. You can download that poster <a class="link" href="assets/docs/work-and-experience/dla-symposium-poster.pdf" target="_blank" rel="noopener noreferrer">here</a>, or a presentation I gave to a group of other DLA students <a class="link" href="assets/docs/work-and-experience/dla-presentation.pdf" target="_blank" rel="noopener noreferrer">here</a>!
+                    </p>
+                </div>
+            </article>
             <article class="container dark" id="omitron-cara-2024">
                 <h3 class="stylized">Omitron Internship - NASA CARA (May 2024 - Present)</h3>
                 <p>
                     I returned to <a class="link" href="https://www.omitron.com/" target="_blank" rel="noopener noreferrer">Omitron</a> for a second summer, this time in a research position on the <a class="link" href="https://www.nasa.gov/conjunction-assessment" target="_blank" rel="noopener noreferrer">CARA</a> (Conjunction Assessment and Risk Analysis) team.
                     Since I was a returning intern, I had the opportunity to felve much more deeply into more complex topics than I was able to during my previous summer; during my work, I was exposed to advanced concepts in conjunction assessment, such as covariance estimation and propagation, covariance realism, multivariate statistical analysis, and multidimensional data visualization.
-                    The majority of my work was on a research project building on the work I did at the end of my previous internship, this time focusing on comparing three methods for visualizing near-Earth satellite conjunctions and their utility for different conjunction geometries; as a part of this research, I both developed a visualization program and wrote a 26-page paper on my work and findings.
+                    The majority of my work was on a research project building on the work I did at the end of my previous internship, this time focusing on comparing three methods for visualizing near-Earth satellite conjunctions and their utility for different conjunction geometries; as a part of this research, I both developed a visualization program and wrote a 20-page paper on my work and findings.
                 </p>
                 <button id="expand-omitron-cara-2024" aria-label="Expand Omitron CARA 2024">
                     <svg class="expand-button">
@@ -59,7 +93,7 @@
                     <p>
                         In addition to my main research project, I also had the opportunity to work on several other projects, including a statistical corner plot generator for MATLAB, a conjunction update visualizer, and an experimental numerical propagator for simulating deep-space conjunctions using simplified equations of motion.
                         I also had the opportunity to present by work to both the CARA Analysis Team and a broader group of engineers, researchers, and interns at the end of the summer.
-                        The paper I wrote is currently going through the NASA review process to hopefully be brought to a conference in summer of 2025.
+                        The paper I wrote is currently pending release at the 2025 Astrodynamics Specialist Conference and I am supporting final work on its preparation.
                     </p>
                 </div>
             </article>
