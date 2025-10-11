@@ -35,7 +35,7 @@
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .work-and-experience-grid {
         max-width: 70%;
         grid-template-areas:

@@ -96,7 +96,7 @@ button {
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .aerospace-software-development-grid {
         max-width: 70%;
         grid-template-areas:
@@ -138,7 +138,7 @@ button {
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .astrodynamics-grid {
         max-width: 70%;
         grid-template-areas:
@@ -180,7 +180,7 @@ button {
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .thermo-aero-fluid-dynamics-grid {
         max-width: 70%;
         grid-template-areas:
@@ -201,7 +201,7 @@ button {
     border-bottom: var(--accent-light) solid 0.25rem;
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .header-container {
         width: 70%;
     }

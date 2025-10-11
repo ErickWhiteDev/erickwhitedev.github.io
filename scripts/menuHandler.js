@@ -40,13 +40,13 @@ function setup() {
     closeMenu();
 }
 
-function endResize(func){ // https://stackoverflow.com/questions/45905160/javascript-on-window-resize-end
+function endResize(func) { // https://stackoverflow.com/questions/45905160/javascript-on-window-resize-end
     let timer;
-    return function(event){
+    return function (event) {
         if (timer) {
             clearTimeout(timer);
         }
-        timer = setTimeout(func,500,event);
+        timer = setTimeout(func, 500, event);
     };
 }
 
@@ -61,9 +61,9 @@ window.onresize = () => {
 }
 
 window.addEventListener("resize", endResize(
-    () => {
-        menu.style.display = "block";
-        bar.style.display = "block";
+        () => {
+            menu.style.display = "block";
+            bar.style.display = "block";
         }
     )
 );
@@ -77,7 +77,7 @@ menuButton.onclick = () => {
 };
 
 document.onclick = (click) => {
-    if(menuOpened && !menu.contains(click.target) && !menuButton.contains(click.target)) {
+    if (menuOpened && !menu.contains(click.target) && !menuButton.contains(click.target)) {
         closeMenu();
     }
 }

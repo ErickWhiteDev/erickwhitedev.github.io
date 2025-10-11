@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
     .home-grid {
         max-width: 70%;
         grid-template-areas:

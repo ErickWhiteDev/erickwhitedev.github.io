@@ -2,6 +2,8 @@
     display: grid;
     max-width: 100%;
     grid-template-areas:
+        "asc-2025"
+        "dla"
         "appm-4610-final-project"
         "mcm-2025"
         "appm-4600-final-project"
@@ -16,6 +18,8 @@
         max-width: 100%;
         padding: 0;
         grid-template-areas:
+            "asc-2025-content asc-2025"
+            "dla dla-content"
             "appm-4610-final-project-content appm-4610-final-project"
             "mcm-2025 mcm-2025-content"
             "appm-4600-final-project-content appm-4600-final-project"
@@ -98,14 +102,21 @@ button {
 
 .writing-content {
     display: none;
-    border: 0;
-    border-radius: 0;
-    background-color: var(--primary-light);
 }
 
 @media (min-width: 1024px) {
     .writing-content {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        transition-duration: 0.25s;
+        border: 0;
+        border-radius: 0;
+        background-color: var(--primary-light);
     }
 }
 
@@ -116,8 +127,24 @@ iframe {
 }
 
 img {
-    width: 50%;
+    width: 100%;
     margin: auto;
+}
+
+#asc-2025 {
+    grid-area: asc-2025;
+}
+
+#asc-2025-content {
+    grid-area: asc-2025-content;
+}
+
+#dla {
+    grid-area: dla;
+}
+
+#dla-content {
+    grid-area: dla-content;
 }
 
 #appm-4610-final-project {
@@ -132,8 +159,8 @@ img {
     grid-area: mcm-2025;
 }
 
-#mcm-2025-final-project {
-    grid-area: mcm-2025-final-project;
+#mcm-2025-content {
+    grid-area: mcm-2025-content;
 }
 
 #appm-4600-final-project {
